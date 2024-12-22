@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--metatextblock-->
+        <title>VanillaSquad - бесплатный ванильный сервер</title>
+        <meta name="description" content="Наш сервер - это мир, где выживание, строительство городов и поиск друзей становятся реальностью без лишних привилегий и плагинов. Присоединяйтесь и погрузитесь в настоящий опыт выживания без приватов и ограничений."/>
+        <meta name="keywords" content="приватный сервер, ванильный майнкрафт, VanillaSquad, открытый мир, минимум ограничений, самописные плагины, голосовой чат, без телепортаций, без экономики, без привата, без доната, без кит старта, уникальный сервер СНГ, выживание, строительство, творчеств"/>
+        <meta property="og:url" content="https://vanillasquad.com"/>
+        <meta property="og:title" content="VanillaSquad"/>
+        <meta property="og:description" content="Наш сервер - это мир, где выживание, строительство городов и поиск друзей становятся реальностью без лишних привилегий и плагинов. Присоединяйтесь и погрузитесь в настоящий опыт выживания без приватов и ограничений."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://static.tildacdn.com/tild3933-6136-4538-b531-303134346435/jWDdpw7wfJn3FEfpHu20.png"/>
+        <link rel="canonical" href="https://vanillasquad.com">
+        <!--/metatextblock-->
+        <meta name="format-detection" content="telephone=no"/>
+        <meta http-equiv="x-dns-prefetch-control" content="on">
+        <link rel="dns-prefetch" href="https://ws.tildacdn.com">
+        <link rel="dns-prefetch" href="https://static.tildacdn.com">
+        <link rel="shortcut icon" href="https://static.tildacdn.com/tild3835-6635-4633-b965-353561633238/logo_new_vs.png" type="image/x-icon"/>
+        <!-- Assets -->
+        <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script>
+        <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/>
+        <link rel="stylesheet" href="https://static.tildacdn.com/ws/project7833059/tilda-blocks-page42569045.min.css?t=1734814853" type="text/css" media="all" onerror="this.loaderr='y';"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Unbounded:wght@300;400;500;600;700&subset=latin,cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-animation-2.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/>
+        <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-popup-1.1.min.css" type="text/css" media="print" onload="this.media='all';" onerror="this.loaderr='y';"/>
+        <noscript>
+            <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-popup-1.1.min.css" type="text/css" media="all"/>
+        </noscript>
+        <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-cover-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/>
+        <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-cards-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/>
+        <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-slds-1.4.min.css" type="text/css" media="print" onload="this.media='all';" onerror="this.loaderr='y';"/>
+        <noscript>
+            <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-slds-1.4.min.css" type="text/css" media="all"/>
+        </noscript>
+        <script nomodule src="https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            function t_onReady(func) {
+                if (document.readyState != 'loading') {
+                    func();
+                } else {
+                    document.addEventListener('DOMContentLoaded', func);
+                }
+            }
+            function t_onFuncLoad(funcName, okFunc, time) {
+                if (typeof window[funcName] === 'function') {
+                    okFunc();
+                } else {
+                    setTimeout(function() {
+                        t_onFuncLoad(funcName, okFunc, time);
+                    }, (time || 100));
+                }
+            }
+            function t_throttle(fn, threshhold, scope) {
+                return function() {
+                    fn.apply(scope || this, arguments);
+                }
+                ;
+            }
+        </script>
+        <script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/ws/project7833059/tilda-blocks-page42569045.min.js?t=1734814853" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-lazyload-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-animation-2.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-menu-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-popup-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-cover-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-cards-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-slds-1.4.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/hammer.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-map-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-video-processor-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-skiplink-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script src="https://static.tildacdn.com/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+        </script>
+        <script type="text/javascript">
+            (function() {
+                if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof (sessionStorage) != 'undefined' && sessionStorage.getItem('visited') !== 'y' && document.visibilityState) {
+                    var style = document.createElement('style');
+                    style.type = 'text/css';
+                    style.innerHTML = '@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
+                    document.getElementsByTagName('head')[0].appendChild(style);
+                    function t_setvisRecs() {
+                        var alr = document.querySelectorAll('.t-records');
+                        Array.prototype.forEach.call(alr, function(el) {
+                            el.classList.add("t-records_animated");
+                        });
+                        setTimeout(function() {
+                            Array.prototype.forEach.call(alr, function(el) {
+                                el.classList.add("t-records_visible");
+                            });
+                            sessionStorage.setItem("visited", "y");
+                        }, 400);
+                    }
+                    document.addEventListener('DOMContentLoaded', t_setvisRecs);
+                }
+            }
+            )();
+        </script>
+    </head>
+    <body class="t-body" style="margin:0;">
+        <!--allrecords-->
+        <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="7833059" data-tilda-page-id="42569045" data-tilda-formskey="181b659822907a699c38876ce7833059" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="com">
+            <div id="rec688336706" class="r t-rec" style=" " data-animationappear="off" data-record-type="257">
+                <!-- T228 -->
+                <div id="nav688336706marker"></div>
+                <div class="tmenu-mobile">
+                    <div class="tmenu-mobile__container">
+                        <div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div>
+                        <button type="button" class="t-menuburger t-menuburger_third " aria-label="Навигационное меню" aria-expanded="false">
+                            <span style="background-color:#fff;"></span>
+                            <span style="background-color:#fff;"></span>
+                            <span style="background-color:#fff;"></span>
+                            <span style="background-color:#fff;"></span>
+                        </button>
+                        <script>
+                            function t_menuburger_init(recid) {
+                                var rec = document.querySelector('#rec' + recid);
+                                if (!rec)
+                                    return;
+                                var burger = rec.querySelector('.t-menuburger');
+                                if (!burger)
+                                    return;
+                                var isSecondStyle = burger.classList.contains('t-menuburger_second');
+                                if (isSecondStyle && !window.isMobile && !('ontouchend'in document)) {
+                                    burger.addEventListener('mouseenter', function() {
+                                        if (burger.classList.contains('t-menuburger-opened'))
+                                            return;
+                                        burger.classList.remove('t-menuburger-unhovered');
+                                        burger.classList.add('t-menuburger-hovered');
+                                    });
+                                    burger.addEventListener('mouseleave', function() {
+                                        if (burger.classList.contains('t-menuburger-opened'))
+                                            return;
+                                        burger.classList.remove('t-menuburger-hovered');
+                                        burger.classList.add('t-menuburger-unhovered');
+                                        setTimeout(function() {
+                                            burger.classList.remove('t-menuburger-unhovered');
+                                        }, 300);
+                                    });
+                                }
+                                burger.addEventListener('click', function() {
+                                    if (!burger.closest('.tmenu-mobile') && !burger.closest('.t450__burger_container') && !burger.closest('.t466__container') && !burger.closest('.t204__burger') && !burger.closest('.t199__js__menu-toggler')) {
+                                        burger.classList.toggle('t-menuburger-opened');
+                                        burger.classList.remove('t-menuburger-unhovered');
+                                    }
+                                });
+                                var menu = rec.querySelector('[data-menu="yes"]');
+                                if (!menu)
+                                    return;
+                                var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+                                var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+                                Array.prototype.forEach.call(menuLinks, function(link) {
+                                    link.addEventListener('click', function() {
+                                        var isSubmenuHook = submenuClassList.some(function(submenuClass) {
+                                            return link.classList.contains(submenuClass);
+                                        });
+                                        if (isSubmenuHook)
+                                            return;
+                                        burger.classList.remove('t-menuburger-opened');
+                                    });
+                                });
+                                menu.addEventListener('clickedAnchorInTooltipMenu', function() {
+                                    burger.classList.remove('t-menuburger-opened');
+                                });
+                            }
+                            t_onReady(function() {
+                                t_onFuncLoad('t_menuburger_init', function() {
+                                    t_menuburger_init('688336706');
+                                });
+                            });
+                        </script>
+                        <style>
+                            .t-menuburger {
+                                position: relative;
+                                flex-shrink: 0;
+                                width: 28px;
+                                height: 20px;
+                                padding: 0;
+                                border: none;
+                                background-color: transparent;
+                                outline: none;
+                                -webkit-transform: rotate(0deg);
+                                transform: rotate(0deg);
+                                transition: transform .5s ease-in-out;
+                                cursor: pointer;
+                                z-index: 999;
+                            }
+
+                            .t-menuburger span {
+                                display: block;
+                                position: absolute;
+                                width: 100%;
+                                opacity: 1;
+                                left: 0;
+                                -webkit-transform: rotate(0deg);
+                                transform: rotate(0deg);
+                                transition: .25s ease-in-out;
+                                height: 3px;
+                                background-color: #000;
+                            }
+
+                            .t-menuburger span:nth-child(1) {
+                                top: 0px;
+                            }
+
+                            .t-menuburger span:nth-child(2),.t-menuburger span:nth-child(3) {
+                                top: 8px;
+                            }
+
+                            .t-menuburger span:nth-child(4) {
+                                top: 16px;
+                            }
+
+                            .t-menuburger__big {
+                                width: 42px;
+                                height: 32px;
+                            }
+
+                            .t-menuburger__big span {
+                                height: 5px;
+                            }
+
+                            .t-menuburger__big span:nth-child(2),.t-menuburger__big span:nth-child(3) {
+                                top: 13px;
+                            }
+
+                            .t-menuburger__big span:nth-child(4) {
+                                top: 26px;
+                            }
+
+                            .t-menuburger__small {
+                                width: 22px;
+                                height: 14px;
+                            }
+
+                            .t-menuburger__small span {
+                                height: 2px;
+                            }
+
+                            .t-menuburger__small span:nth-child(2),.t-menuburger__small span:nth-child(3) {
+                                top: 6px;
+                            }
+
+                            .t-menuburger__small span:nth-child(4) {
+                                top: 12px;
+                            }
+
+                            .t-menuburger-opened span:nth-child(1) {
+                                top: 8px;
+                                width: 0%;
+                                left: 50%;
+                            }
+
+                            .t-menuburger-opened span:nth-child(2) {
+                                -webkit-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+
+                            .t-menuburger-opened span:nth-child(3) {
+                                -webkit-transform: rotate(-45deg);
+                                transform: rotate(-45deg);
+                            }
+
+                            .t-menuburger-opened span:nth-child(4) {
+                                top: 8px;
+                                width: 0%;
+                                left: 50%;
+                            }
+
+                            .t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+                                top: 6px;
+                            }
+
+                            .t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+                                top: 18px;
+                            }
+
+                            .t-menuburger-opened.t-menuburger__small span:nth-child(1),.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+                                top: 6px;
+                            }
+
+                            @media (hover),(min-width: 0\0) {
+                                .t-menuburger_first:hover span:nth-child(1) {
+                                    transform:translateY(1px);
+                                }
+
+                                .t-menuburger_first:hover span:nth-child(4) {
+                                    transform: translateY(-1px);
+                                }
+
+                                .t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+                                    transform: translateY(3px);
+                                }
+
+                                .t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+                                    transform: translateY(-3px);
+                                }
+                            }
+
+                            .t-menuburger_second span:nth-child(2),.t-menuburger_second span:nth-child(3) {
+                                width: 80%;
+                                left: 20%;
+                                right: 0;
+                            }
+
+                            @media (hover),(min-width: 0\0) {
+                                .t-menuburger_second.t-menuburger-hovered span:nth-child(2),.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+                                    animation:t-menuburger-anim 0.3s ease-out normal forwards;
+                                }
+
+                                .t-menuburger_second.t-menuburger-unhovered span:nth-child(2),.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+                                    animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+                                }
+                            }
+
+                            .t-menuburger_second.t-menuburger-opened span:nth-child(2),.t-menuburger_second.t-menuburger-opened span:nth-child(3) {
+                                left: 0;
+                                right: 0;
+                                width: 100%!important;
+                            }
+
+                            .t-menuburger_third span:nth-child(4) {
+                                width: 70%;
+                                left: unset;
+                                right: 0;
+                            }
+
+                            @media (hover),(min-width: 0\0) {
+                                .t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+                                    width:100%;
+                                }
+                            }
+
+                            .t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+                                width: 0!important;
+                                right: 50%;
+                            }
+
+                            .t-menuburger_fourth {
+                                height: 12px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__small {
+                                height: 8px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__big {
+                                height: 18px;
+                            }
+
+                            .t-menuburger_fourth span:nth-child(2),.t-menuburger_fourth span:nth-child(3) {
+                                top: 4px;
+                                opacity: 0;
+                            }
+
+                            .t-menuburger_fourth span:nth-child(4) {
+                                top: 8px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__small span:nth-child(2),.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+                                top: 3px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+                                top: 6px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__small span:nth-child(2),.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+                                top: 3px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+                                top: 6px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__big span:nth-child(2),.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+                                top: 6px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+                                top: 12px;
+                            }
+
+                            @media (hover),(min-width: 0\0) {
+                                .t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+                                    transform:translateY(1px);
+                                }
+
+                                .t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+                                    transform: translateY(-1px);
+                                }
+
+                                .t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+                                    transform: translateY(3px);
+                                }
+
+                                .t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+                                    transform: translateY(-3px);
+                                }
+                            }
+
+                            .t-menuburger_fourth.t-menuburger-opened span:nth-child(1),.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+                                top: 4px;
+                            }
+
+                            .t-menuburger_fourth.t-menuburger-opened span:nth-child(2),.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+                                opacity: 1;
+                            }
+
+                            @keyframes t-menuburger-anim {
+                                0% {
+                                    width: 80%;
+                                    left: 20%;
+                                    right: 0;
+                                }
+
+                                50% {
+                                    width: 100%;
+                                    left: 0;
+                                    right: 0;
+                                }
+
+                                100% {
+                                    width: 80%;
+                                    left: 0;
+                                    right: 20%;
+                                }
+                            }
+
+                            @keyframes t-menuburger-anim2 {
+                                0% {
+                                    width: 80%;
+                                    left: 0;
+                                }
+
+                                50% {
+                                    width: 100%;
+                                    right: 0;
+                                    left: 0;
+                                }
+
+                                100% {
+                                    width: 80%;
+                                    left: 20%;
+                                    right: 0;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+                <style>
+                    .tmenu-mobile {
+                        background-color: #111;
+                        display: none;
+                        width: 100%;
+                        top: 0;
+                        z-index: 990;
+                    }
+
+                    .tmenu-mobile_positionfixed {
+                        position: fixed;
+                    }
+
+                    .tmenu-mobile__text {
+                        color: #fff;
+                    }
+
+                    .tmenu-mobile__container {
+                        min-height: 64px;
+                        padding: 20px;
+                        position: relative;
+                        box-sizing: border-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                    }
+
+                    .tmenu-mobile__list {
+                        display: block;
+                    }
+
+                    .tmenu-mobile__burgerlogo {
+                        display: inline-block;
+                        font-size: 24px;
+                        font-weight: 400;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                    }
+
+                    .tmenu-mobile__imglogo {
+                        height: auto;
+                        display: block;
+                        max-width: 300px!important;
+                        box-sizing: border-box;
+                        padding: 0;
+                        margin: 0 auto;
+                    }
+
+                    @media screen and (max-width: 980px) {
+                        .tmenu-mobile__menucontent_hidden {
+                            display:none;
+                            height: 100%;
+                        }
+
+                        .tmenu-mobile {
+                            display: block;
+                        }
+                    }
+
+                    @media screen and (max-width: 980px) {
+                        #rec688336706 .t-menuburger {
+                            -webkit-order:1;
+                            -ms-flex-order: 1;
+                            order: 1;
+                        }
+                    }
+                </style>
+                <style>
+                    #rec688336706 .tmenu-mobile__burgerlogo a {
+                        color: #ffffff;
+                    }
+                </style>
+                <style>
+                    #rec688336706 .tmenu-mobile__burgerlogo__title {
+                        color: #ffffff;
+                    }
+                </style>
+                <div id="nav688336706" class="t228 t228__positionabsolute tmenu-mobile__menucontent_hidden" style="background-color: rgba(0,0,0,0.50); " data-bgcolor-hex="#000000" data-bgcolor-rgba="rgba(0,0,0,0.50)" data-navmarker="nav688336706marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-menushadow-css="" data-bgopacity="0.50" data-menu-items-align="center" data-menu="yes">
+                    <div class="t228__maincontainer " style="">
+                        <div class="t228__padding40px"></div>
+                        <div class="t228__leftside">
+                            <div class="t228__leftcontainer">
+                                <a href="http://vanillasquad.com" class="t228__imgwrapper">
+                                    <img class="t228__imglogo " src="https://static.tildacdn.com/tild3362-3232-4364-a534-366564393763/logo_new_vs.png" imgfield="img" style="max-height: 80px" alt="VanillaSquad">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="t228__centerside ">
+                            <nav class="t228__centercontainer">
+                                <ul role="list" class="t228__list t-menu__list t228__list_hidden">
+                                    <li class="t228__list_item" style="padding:0 15px 0 0;">
+                                        <a class="t-menu__link-item" href="https://vanillasquad.com/#rec688336707" data-menu-submenu-hook="" data-menu-item-number="1">Главная
+</a>
+                                    </li>
+                                    <li class="t228__list_item" style="padding:0 15px;">
+                                        <a class="t-menu__link-item" href="https://vanillasquad.com/#about" data-menu-submenu-hook="" data-menu-item-number="2">О сервере
+</a>
+                                    </li>
+                                    <li class="t228__list_item" style="padding:0 15px;">
+                                        <a class="t-menu__link-item" href="/map" data-menu-submenu-hook="" data-menu-item-number="3">Карта
+</a>
+                                    </li>
+                                    <li class="t228__list_item" style="padding:0 15px;">
+                                        <a class="t-menu__link-item" href="https://donate.vanillasquad.com/" data-menu-submenu-hook="" data-menu-item-number="4">Магазин
+</a>
+                                    </li>
+                                    <li class="t228__list_item" style="padding:0 15px;">
+                                        <a class="t-menu__link-item" href="https://docs.vanillasquad.com/" data-menu-submenu-hook="" data-menu-item-number="5">Документация
+</a>
+                                    </li>
+                                    <li class="t228__list_item" style="padding:0 0 0 15px;">
+                                        <a class="t-menu__link-item" href="/banlist" data-menu-submenu-hook="" data-menu-item-number="6">Бан-лист
+</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="t228__rightside">
+                            <div class="t228__rightcontainer">
+                                <div class="t-sociallinks">
+                                    <ul role="list" class="t-sociallinks__wrapper" aria-label="Соц. сети">
+                                        <!-- new soclinks -->
+                                        <li class="t-sociallinks__item t-sociallinks__item_website">
+                                            <a href="https://discord.gg/vanillasquad" target="_blank" rel="nofollow" aria-label="Discord" title="Discord" style="width: 30px; height: 30px;">
+                                                <img src=https://static.tildacdn.com/tild3639-3431-4562-b139-313035373161/icons8-discord-94.png alt="website icon" class="t-sociallinks__customimg" style="width:30px; height:30px; vertical-align: baseline; object-fit: contain; object-position: center;">
+                                            </a>
+                                        </li>
+                                        &nbsp;
+                                        <li class="t-sociallinks__item t-sociallinks__item_website">
+                                            <a href="https://t.me/vanillasquadru" target="_blank" rel="nofollow" aria-label="Telegram" title="Telegram" style="width: 30px; height: 30px;">
+                                                <img src=https://static.tildacdn.com/tild3664-3230-4636-b562-633963663135/icons8--94.png alt="website icon" class="t-sociallinks__customimg" style="width:30px; height:30px; vertical-align: baseline; object-fit: contain; object-position: center;">
+                                            </a>
+                                        </li>
+                                        &nbsp;
+                                        <li class="t-sociallinks__item t-sociallinks__item_website">
+                                            <a href="https://www.tiktok.com/@vanillasquad" target="_blank" rel="nofollow" aria-label="TikTok" title="TikTok" style="width: 30px; height: 30px;">
+                                                <img src=https://static.tildacdn.com/tild3063-3332-4530-a561-633563633066/icons8--94.png alt="website icon" class="t-sociallinks__customimg" style="width:30px; height:30px; vertical-align: baseline; object-fit: contain; object-position: center;">
+                                            </a>
+                                        </li>
+                                        &nbsp;
+                                        <li class="t-sociallinks__item t-sociallinks__item_website">
+                                            <a href="https://www.youtube.com/channel/UCwpG107hkucUBcUzvJ1GeXw" target="_blank" rel="nofollow" aria-label="YouTube" title="YouTube" style="width: 30px; height: 30px;">
+                                                <img src=https://static.tildacdn.com/tild3238-3835-4633-b736-626338313162/icons8-youtube-188.png alt="website icon" class="t-sociallinks__customimg" style="width:30px; height:30px; vertical-align: baseline; object-fit: contain; object-position: center;">
+                                            </a>
+                                        </li>
+                                        &nbsp;
+                                        <li class="t-sociallinks__item t-sociallinks__item_website">
+                                            <a href="https://www.twitch.tv/vanillasquadcom" target="_blank" rel="nofollow" aria-label="Twitch" title="Twitch" style="width: 30px; height: 30px;">
+                                                <img src=https://static.tildacdn.com/tild3034-6331-4961-a363-353034326332/icons8-twitch-94.png alt="website icon" class="t-sociallinks__customimg" style="width:30px; height:30px; vertical-align: baseline; object-fit: contain; object-position: center;">
+                                            </a>
+                                        </li>
+                                        <!-- /new soclinks -->
+                                        <script>
+                                            t_onReady(function() {
+                                                var rec = document.getElementById('rec688336706');
+                                                if (!rec)
+                                                    return;
+                                                var customImageList = rec.querySelectorAll('img.t-sociallinks__customimg');
+                                                Array.prototype.forEach.call(customImageList, function(img) {
+                                                    var imgURL = img.getAttribute('src');
+                                                    if (imgURL.indexOf('/lib__tildaicon__') !== -1 || imgURL.indexOf('/lib/tildaicon/') !== -1 || imgURL.indexOf('/lib/icons/tilda') !== -1) {
+                                                        var xhr = new XMLHttpRequest();
+                                                        xhr.open('GET', imgURL);
+                                                        xhr.responseType = 'document';
+                                                        xhr.onload = function() {
+                                                            if (xhr.status >= 200 && xhr.status < 400) {
+                                                                var response = xhr.response;
+                                                                var svg = response.querySelector('svg');
+                                                                svg.style.width = '30px';
+                                                                svg.style.height = '30px';
+                                                                var figureList = svg.querySelectorAll('*:not(g):not(title):not(desc)');
+                                                                for (var j = 0; j < figureList.length; j++) {
+                                                                    figureList[j].style.fill = '#000000';
+                                                                }
+                                                                ;if (img.parentNode) {
+                                                                    img.parentNode.append(svg);
+                                                                }
+                                                                img.remove();
+                                                            } else {
+                                                                img.style.visibility = 'visible';
+                                                            }
+                                                        }
+                                                        xhr.onerror = function(error) {
+                                                            img.style.visibility = 'visible';
+                                                        }
+                                                        xhr.send();
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </ul>
+                                </div>
+                                <div class="t228__right_buttons">
+                                    <div class="t228__right_buttons_wrap">
+                                        <div class="t228__right_buttons_but">
+                                            <a href="https://discord.com/channels/660357711174696970/918216928076632135" target="" class="t-btn t-btn_md " style="color:#000000;background-color:#ffffff;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;" data-buttonfieldset="button">Обратиться в поддержку
+</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t228__padding40px"></div>
+                    </div>
+                </div>
+                <style>
+                    @media screen and (max-width: 980px) {
+                        #rec688336706 .t228 {
+                            position:static;
+                        }
+                    }
+                </style>
+                <script>
+                    window.addEventListener('load', function() {
+                        t_onFuncLoad('t228_setWidth', function() {
+                            t228_setWidth('688336706');
+                        });
+                    });
+                    window.addEventListener('resize', t_throttle(function() {
+                        t_onFuncLoad('t228_setWidth', function() {
+                            t228_setWidth('688336706');
+                        });
+                        t_onFuncLoad('t_menu__setBGcolor', function() {
+                            t_menu__setBGcolor('688336706', '.t228');
+                        });
+                    }));
+                    t_onReady(function() {
+                        t_onFuncLoad('t_menu__highlightActiveLinks', function() {
+                            t_menu__highlightActiveLinks('.t228__list_item a');
+                        });
+                        t_onFuncLoad('t228__init', function() {
+                            t228__init('688336706');
+                        });
+                        t_onFuncLoad('t_menu__setBGcolor', function() {
+                            t_menu__setBGcolor('688336706', '.t228');
+                        });
+                        t_onFuncLoad('t_menu__interactFromKeyboard', function() {
+                            t_menu__interactFromKeyboard('688336706');
+                        });
+                        t_onFuncLoad('t228_setWidth', function() {
+                            t228_setWidth('688336706');
+                        });
+                        t_onFuncLoad('t_menu__createMobileMenu', function() {
+                            t_menu__createMobileMenu('688336706', '.t228');
+                        });
+                    });
+                </script>
+                <!--[if IE 8]> <style>#rec688336706 .t228{filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000',endColorstr='#D9000000');}</style> <![endif]-->
+                <style>
+                    #rec688336706 .t-menu__link-item {
+                    }
+
+                    @supports (overflow: -webkit-marquee) and (justify-content:inherit) {
+                        #rec688336706 .t-menu__link-item,#rec688336706 .t-menu__link-item.t-active {
+                            opacity:1 !important;
+                        }
+                    }
+                </style>
+                <style>
+                    #rec688336706 .t228__leftcontainer a {
+                        color: #ffffff;
+                    }
+
+                    #rec688336706 a.t-menu__link-item {
+                        color: #ffffff;
+                        font-weight: 600;
+                    }
+
+                    #rec688336706 .t228__right_langs_lang a {
+                        color: #ffffff;
+                        font-weight: 600;
+                    }
+                </style>
+                <style>
+                    #rec688336706 .t228__logo {
+                        color: #ffffff;
+                    }
+                </style>
+            </div>
+            <div id="rec832774640" class="r t-rec" style=" " data-record-type="390">
+                <div class="t390">
+                    <div class="t-popup" data-tooltip-hook="#popup:maps" role="dialog" aria-modal="true" tabindex="-1" aria-label="Какая интерактивная карта вам нужна?">
+                        <div class="t-popup__close t-popup__block-close">
+                            <button type="button" class="t-popup__close-wrapper t-popup__block-close-button" aria-label="Закрыть диалоговое окно">
+                                <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                                        <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                        <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="t-popup__container t-width t-width_6" style="background-color:#fbfbf9;">
+                            <div class="t390__wrapper t-align_center">
+                                <div class="t390__title t-heading t-heading_lg" id="popuptitle_832774640">Какая интерактивная карта вам нужна?</div>
+                                <div class="t390__descr t-descr t-descr_xs">Выберите, что хотите посмотреть.</div>
+                                <div class="t390__btn-wrapper">
+                                    <a href="https://map.vanillasquad.com/" target="" class="t390__btn t390__btn_first t-btn t-btn_md " style="margin-right: 8px; color:#222222;border:2px solid #222222;border-radius:100px; -moz-border-radius:100px; -webkit-border-radius:100px;">
+                                        <table role="presentation" style="width:100%; height:100%;">
+                                            <tr>
+                                                <td>Мир построек</td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                    <a href="https://mapart.vanillasquad.com/" target="" class="t390__btn t-btn t-btn_md " style="color:#222222;border:2px solid #222222;border-radius:100px; -moz-border-radius:100px; -webkit-border-radius:100px;">
+                                        <table style="width:100%; height:100%;">
+                                            <tr>
+                                                <td>Мир артов</td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    t_onReady(function() {
+                        var rec = document.querySelector('#rec832774640');
+                        if (!rec)
+                            return;
+                        rec.setAttribute('data-animationappear', 'off');
+                        rec.style.opacity = 1;
+                        t_onFuncLoad('t390_initPopup', function() {
+                            t390_initPopup('832774640');
+                        });
+                    });
+                </script>
+            </div>
+            <div id="rec832847370" class="r t-rec" style=" " data-animationappear="off" data-record-type="971">
+                <!-- T971 -->
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t971_init', function() {
+                            t971_init('688336707');
+                        });
+                    });
+                </script>
+                <style>
+                    .t971__snowflake svg path {
+                        stroke: #90c5ea;
+                    }
+                </style>
+            </div>
+            <div id="rec688336707" class="r t-rec" style=" " data-animationappear="off" data-record-type="986">
+                <!-- t986 -->
+                <!-- cover -->
+                <div class="t-cover" id="recorddiv688336707" bgimgfield="img" style="height:100vh;background-image:url('https://thb.tildacdn.com/tild3666-3261-4336-a539-653236326534/-/resize/20x/zfzm8tc47ds9wddn7dwv.png');">
+                    <div class="t-cover__carrier" id="coverCarry688336707" data-content-cover-id="688336707" data-content-cover-bg="https://static.tildacdn.com/tild3666-3261-4336-a539-653236326534/zfzm8tc47ds9wddn7dwv.png" data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax="" data-content-use-image-for-mobile-cover="" data-content-video-url-kinescope="n2AF99YQXhSTwXVrERMozN?t=28" style="height:100vh;background-attachment:scroll; " itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="image" content="https://static.tildacdn.com/tild3666-3261-4336-a539-653236326534/zfzm8tc47ds9wddn7dwv.png">
+                    </div>
+                    <div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.80));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.80));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.80));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.80));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.80));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#33000000');"></div>
+                    <div class="t-container">
+                        <div class="t-width t-width_10 t986__mainblock">
+                            <div class="t986 t-align_center">
+                                <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
+                                    <div class="t986__wrapper" data-hook-content="covercontent">
+                                        <h1 class="t986__title t-title t-title_lg" field="title">VANILLA SQUAD</h1>
+                                        <div class="t986__descr t-descr t-descr_lg" field="descr">Без привата, привилегий и только с дружелюбными к ваниле плагинами.</div>
+                                        <div class="t986__buttons t986__buttons_center">
+                                            <div class="t-btnwrapper ">
+                                                <a href="#start" target="" class="t986__button t-btn t-btn_md " style="color:#000000;background-color:#ffffff;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;" data-field="buttontitle" data-buttonfieldset="button">Начать игру
+</a>
+                                            </div>
+                                            <div class="t-btnwrapper ">
+                                                <button type="button" class="t986__button t986__playbutton t986__textbtn t-btn t-btn_md " style="color:#ffffff;" aria-label="Воспроизвести видео">
+                                                    <div class="t986__textbtn-img">
+                                                        <svg role="presentation" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27ZM20.861 13.3309L9.79551 7.54244L9.79551 13.3309V19.1194L20.861 13.3309Z" fill="white"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="t986__btn-text" data-field="buttontitle2">Видео о сервере</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t986__video-container t986__hidden" data-content-popup-video-url-youtube="GoFfLf6sjwc">
+                        <div class="t986__video-carier"></div>
+                        <a class="t986__video-bg t986__closevideo-bg" style="background:#000000; opacity:0.80;"></a>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    t_onReady(function() {
+                        var rec = document.querySelector('#rec688336707');
+                        if (!rec)
+                            return;
+                        rec.setAttribute('data-animationappear', 'off');
+                        rec.style.opacity = '1';
+                        t_onFuncLoad('t986_init', function() {
+                            t986_init('688336707');
+                        });
+                    });
+                </script>
+            </div>
+            <div id="rec829723318" class="r t-rec" style=" " data-record-type="215">
+                <a name="about" style="font-size:0;"></a>
+            </div>
+            <div id="rec688336710" class="r t-rec t-rec_pt_150 t-rec_pb_180" style="padding-top:150px;padding-bottom:180px;background-color:#f2f2f2; " data-record-type="503" data-bg-color="#f2f2f2">
+                <!-- t503 -->
+                <div class="t503">
+                    <div class="t-section__container t-container t-container_flex">
+                        <div class="t-col t-col_12 ">
+                            <div class="t-section__title t-title t-title_xs t-align_center t-margin_auto t-animate" data-animate-style="fadeindown" data-animate-group="yes" field="btitle">Что это за сервер?
+</div>
+                            <div class="t-section__descr t-descr t-descr_xl t-align_center t-margin_auto t-animate" data-animate-style="fadeindown" data-animate-group="yes" field="bdescr">
+                                <p style="text-align: center;">Наш сервер подобен социальной сети, где игроки присоединяются не только для игры, но и для общения, поиска новых друзей и установления знакомств.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .t-section__descr {
+                            max-width: 560px;
+                        }
+
+                        #rec688336710 .t-section__title {
+                            margin-bottom: 40px;
+                        }
+
+                        #rec688336710 .t-section__descr {
+                            margin-bottom: 105px;
+                        }
+
+                        @media screen and (max-width: 960px) {
+                            #rec688336710 .t-section__title {
+                                margin-bottom:20px;
+                            }
+
+                            #rec688336710 .t-section__descr {
+                                margin-bottom: 45px;
+                            }
+                        }
+                    </style>
+                    <ul role="list" class="t503__container t-card__container t-card__container_inrow3 t-container">
+                        <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
+                            <div class="t503__content t-align_center">
+                                <img class="t503__img t-img" src="https://thb.tildacdn.com/tild6366-3836-4133-b738-333331663337/-/empty/wild_alex-png.png" data-original="https://static.tildacdn.com/tild6366-3836-4133-b738-333331663337/wild_alex-png.png" imgfield="li_img__1476976310929" style="width:90px;" alt="">
+                                <div class="t-card__title t-name t-name_md" field="li_title__1476976310929">
+                                    <p style="text-align: center;">
+                                        <strong style="font-size: 22px; line-height: 24px;">Выживайте</strong>
+                                    </p>
+                                    <br/>
+                                    <p style="text-align: center;">
+                                        <span style="font-family: Rubik;">На данном сервере у вас будет возможность переживать настоящие приключения, ведь его основа - это классическое, ванильное выживание вместе с другими игроками.</span>
+                                    </p>
+                                </div>
+                                <style>
+                                    #rec688336710 .t-card__title {
+                                        font-weight: 300;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                        <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
+                            <div class="t503__content t-align_center">
+                                <img class="t503__img t-img" src="https://thb.tildacdn.com/tild6335-3538-4634-a433-313963616531/-/empty/637948173294758191.png" data-original="https://static.tildacdn.com/tild6335-3538-4634-a433-313963616531/637948173294758191.png" imgfield="li_img__1476976315081" style="width:90px;" alt="">
+                                <div class="t-card__title t-name t-name_md" field="li_title__1476976315081">
+                                    <p style="text-align: center;">
+                                        <strong style="font-size: 22px;">Вступайте в города</strong>
+                                    </p>
+                                    <br/>
+                                    <p style="text-align: center;">
+                                        <span style="font-family: Rubik;">Присоединяйтесь к городам сервера! Здесь вы сможете вступить в объединения игроков, которые совместно строят города и активно общаются.</span>
+                                    </p>
+                                </div>
+                                <style>
+                                    #rec688336710 .t-card__title {
+                                        font-weight: 300;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                        <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
+                            <div class="t503__content t-align_center">
+                                <img class="t503__img t-img" src="https://thb.tildacdn.com/tild3533-6663-4263-b662-613438613331/-/empty/torgovets-png.png" data-original="https://static.tildacdn.com/tild3533-6663-4263-b662-613438613331/torgovets-png.png" imgfield="li_img__1476976330452" style="width:90px;" alt="">
+                                <div class="t-card__title t-name t-name_md" field="li_title__1476976330452">
+                                    <p style="text-align: center;">
+                                        <strong style="font-size: 22px;">Торгуйте</strong>
+                                    </p>
+                                    <br/>
+                                    <p style="text-align: center;">На сервере у вас есть возможность заниматься торговлей. Работайте, добывайте ресурсы, создавайте свой бизнес и продавайте предметы на рынке.</p>
+                                </div>
+                                <style>
+                                    #rec688336710 .t-card__title {
+                                        font-weight: 300;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                        <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
+                            <div class="t503__content t-align_center">
+                                <img class="t503__img t-img" src="https://thb.tildacdn.com/tild3066-6436-4531-b131-633961613138/-/empty/Narru_Pig.png" data-original="https://static.tildacdn.com/tild3066-6436-4531-b131-633961613138/Narru_Pig.png" imgfield="li_img__1476976334035" style="width:90px;" alt="">
+                                <div class="t-card__title t-name t-name_md" field="li_title__1476976334035">
+                                    <p style="text-align: center;">
+                                        <strong style="font-size: 22px;">Участвуйте в событиях</strong>
+                                    </p>
+                                    <br/>
+                                    <p style="text-align: center;">У нас также проводятся разнообразные ивенты, на которых вы можете участвовать. Помимо этого, у вас есть возможность участвовать в аукционах, событиях и играх.</p>
+                                </div>
+                                <style>
+                                    #rec688336710 .t-card__title {
+                                        font-weight: 300;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                        <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
+                            <div class="t503__content t-align_center">
+                                <img class="t503__img t-img" src="https://thb.tildacdn.com/tild6136-3962-4261-b538-336236376433/-/empty/strayder.png" data-original="https://static.tildacdn.com/tild6136-3962-4261-b538-336236376433/strayder.png" imgfield="li_img__1476976688514" style="width:90px;" alt="">
+                                <div class="t-card__title t-name t-name_md" field="li_title__1476976688514">
+                                    <p style="text-align: center;">
+                                        <strong style="font-size: 22px;">Делайте свой выбор</strong>
+                                    </p>
+                                    <br/>
+                                    <p style="text-align: center;">На нашем сервере управление в руках обычных игроков, которых выбирают через голосование. Это демократический подход к управлению, где каждый имеет возможность внести свой вклад и влиять на развитие сервера.</p>
+                                </div>
+                                <style>
+                                    #rec688336710 .t-card__title {
+                                        font-weight: 300;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                        <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
+                            <div class="t503__content t-align_center">
+                                <img class="t503__img t-img" src="https://thb.tildacdn.com/tild6364-3264-4337-b633-623131313534/-/empty/vektor.png" data-original="https://static.tildacdn.com/tild6364-3264-4337-b633-623131313534/vektor.png" imgfield="li_img__1476976692541" style="width:90px;" alt="">
+                                <div class="t-card__title t-name t-name_md" field="li_title__1476976692541">
+                                    <p style="text-align: center;">
+                                        <strong style="font-size: 22px;">Придумай свою игру</strong>
+                                    </p>
+                                    <br/>
+                                    <p style="text-align: center;">На сервере у нас есть одно важное правило: игра строится на отношениях между игроками в ванильном Minecraft, и мы призываем каждого участника придумывать свои собственные правила, которые помогут сделать наше сообщество ещё лучше и интереснее. Главное, чтобы эти правила соблюдали дух сотрудничества, уважения и взаимопонимания между всеми участниками.</p>
+                                </div>
+                                <style>
+                                    #rec688336710 .t-card__title {
+                                        font-weight: 300;
+                                    }
+                                </style>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t503_init', function() {
+                            t503_init('688336710');
+                        });
+                    });
+                </script>
+            </div>
+            <div id="rec829724056" class="r t-rec" style=" " data-record-type="215">
+                <a name="currency" style="font-size:0;"></a>
+            </div>
+            <div id="rec688336716" class="r t-rec t-rec_pt_165 t-rec_pb_90" style="padding-top:165px;padding-bottom:90px;background-color:#1e90ff; " data-animationappear="off" data-record-type="255" data-bg-color="#1e90ff">
+                <!-- T225 -->
+                <div class="t225">
+                    <div class="t-container t-align_center">
+                        <div class="t-col t-col_8 t-prefix_2">
+                            <div class="t225__title t-title t-title_md t-animate" data-animate-style="fadeinup" data-animate-group="yes" field="title">Без плагинов на аукцион, работу и валюту</div>
+                            <div class="t225__descr t-descr t-descr_xxl t-animate" data-animate-style="fadeinup" data-animate-group="yes" field="descr">
+                                <p style="text-align: center;">
+                                    <span style="color: rgb(255, 255, 255);">Валюта сервера — алмазная руда, игра строится на отношениях между игроками</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    #rec688336716 .t225__uptitle {
+                        text-transform: uppercase;
+                    }
+
+                    #rec688336716 .t225__title {
+                        color: #ffffff;
+                    }
+
+                    #rec688336716 .t225__descr {
+                        color: #adadad;
+                    }
+                </style>
+            </div>
+            <div id="rec829724234" class="r t-rec" style=" " data-record-type="215">
+                <a name="functional" style="font-size:0;"></a>
+            </div>
+            <div id="rec688336712" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; " data-record-type="509">
+                <!-- t509 -->
+                <div class="t509">
+                    <div class="t-section__container t-container t-container_flex">
+                        <div class="t-col t-col_12 ">
+                            <div class="t-section__title t-title t-title_xs t-align_center t-margin_auto t-animate" data-animate-style="fadeinleft" data-animate-group="yes" field="btitle">Что у нас есть здесь?
+</div>
+                            <div class="t-section__descr t-descr t-descr_xl t-align_center t-margin_auto t-animate" data-animate-style="fadeinleft" data-animate-group="yes" field="bdescr">Давай посмотрим...
+</div>
+                        </div>
+                    </div>
+                    <style>
+                        .t-section__descr {
+                            max-width: 560px;
+                        }
+
+                        #rec688336712 .t-section__title {
+                            margin-bottom: 40px;
+                        }
+
+                        #rec688336712 .t-section__descr {
+                            margin-bottom: 105px;
+                        }
+
+                        @media screen and (max-width: 960px) {
+                            #rec688336712 .t-section__title {
+                                margin-bottom:20px;
+                            }
+
+                            #rec688336712 .t-section__descr {
+                                margin-bottom: 45px;
+                            }
+                        }
+                    </style>
+                    <div class="t-card__container t-container">
+                        <div class="t509__colwrapper t-col t-col_12 ">
+                            <div class="t-item t-animate" data-animate-style="fadeinleft" data-animate-chain="yes">
+                                <div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject">
+                                    <meta itemprop="image" content="https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg">
+                                    <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3334-3363-4134-a234-363933336633/cacb1a34013f082edc14.jpg" bgimgfield="li_img__1476897493817" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg');"></div>
+                                </div>
+                                <div class="t509__col t-col t-col_6 t509__leftcol">
+                                    <div class="t509__textwrapper t-align_left" style="max-width:400px;">
+                                        <div class="t509__content t-valign_middle">
+                                            <div class="t509__box">
+                                                <div class="t-card__title t-heading t-heading_xs t-margin_auto" id="cardtitle1_688336712" field="li_title__1476897493817">
+                                                    <p style="text-align: left;">Мир построек и мир ферм</p>
+                                                </div>
+                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1476897493817">
+                                                    Мы заботимся о качестве игрового опыта наших игроков. У нас есть два отдельных сервера: <span style="color: rgb(130, 151, 13);">мир построек, мир ферм</span>
+                                                    . Это помогает распределить нагрузку, что снижает задержки (лаги) и обеспечивает более плавную игру, даже когда на сервере находится более 100 игроков.<br/>
+                                                    <br/>
+                                                    Важными параметрами нашего сервера являются <span style="color: rgb(31, 152, 20);">20 TPS</span>
+                                                    (тиков в секунду) в мире построек при наличии более 100 игроков онлайн, прогрузка 12 чанков, а также эффективные фермы с высоким спавнрейтом в мире ферм. Это создает благоприятные условия для строительства и развития ваших игровых проектов.
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t509__col t-col t-col_6 t509__rightcol t509__desktopimg">
+                                    <div class="t509__imgwrapper" style="" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg">
+                                        <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3334-3363-4134-a234-363933336633/cacb1a34013f082edc14.jpg" bgimgfield="li_img__1476897493817" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg');"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t509__separator t-clear" style="margin-bottom:60px;"></div>
+                            <div class="t-item t-animate" data-animate-style="fadeinleft" data-animate-chain="yes">
+                                <div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject">
+                                    <meta itemprop="image" content="https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg">
+                                    <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3262-3236-4665-b262-386566363862/23e93c7a2ae7f2e845cd.jpg" bgimgfield="li_img__1476897695209" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg');"></div>
+                                </div>
+                                <div class="t509__col t-col t-col_6 t509__leftcol t509__desktopimg">
+                                    <div class="t509__imgwrapper" style="" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg">
+                                        <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3262-3236-4665-b262-386566363862/23e93c7a2ae7f2e845cd.jpg" bgimgfield="li_img__1476897695209" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="t509__col t-col t-col_6 t509__rightcol">
+                                    <div class="t509__textwrapper t-align_left" style="max-width:400px;">
+                                        <div class="t509__content t-valign_middle">
+                                            <div class="t509__box">
+                                                <div class="t-card__title t-heading t-heading_xs t-margin_auto" id="cardtitle2_688336712" field="li_title__1476897695209">
+                                                    <p style="text-align: left;">Голосовой чат</p>
+                                                </div>
+                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1476897695209">Голосовой чат позволяет вам глубже погрузиться в мир игры и установить близкий контакт с игроками, созданными командой Plasmo. Вы взаимодействуете с ними так, словно общаетесь в реальной жизни.
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t509__separator t-clear" style="margin-bottom:60px;"></div>
+                            <div class="t-item t-animate" data-animate-style="fadeinleft" data-animate-chain="yes">
+                                <div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject">
+                                    <meta itemprop="image" content="https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg">
+                                    <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3638-6464-4236-b232-313535633832/emotecraft-mod-minec.jpeg" bgimgfield="li_img__1486331374633" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg');"></div>
+                                </div>
+                                <div class="t509__col t-col t-col_6 t509__leftcol">
+                                    <div class="t509__textwrapper t-align_left" style="max-width:400px;">
+                                        <div class="t509__content t-valign_middle">
+                                            <div class="t509__box">
+                                                <div class="t-card__title t-heading t-heading_xs t-margin_auto" id="cardtitle3_688336712" field="li_title__1486331374633">Эмоции
+</div>
+                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1486331374633">Emote Craft помогает игрокам на сервере ярко выразить свои эмоции, придавая игре более атмосферный вид. Для этого необходимо загрузить мод и связанные с ним компоненты.
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t509__col t-col t-col_6 t509__rightcol t509__desktopimg">
+                                    <div class="t509__imgwrapper" style="" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg">
+                                        <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3638-6464-4236-b232-313535633832/emotecraft-mod-minec.jpeg" bgimgfield="li_img__1486331374633" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg');"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t509_setHeight', function() {
+                            window.addEventListener('resize', t_throttle(function() {
+                                t509_setHeight('688336712');
+                            }));
+                            t509_setHeight('688336712');
+                            var rec = document.querySelector('#rec688336712');
+                            if (!rec)
+                                return;
+                            var wrapper = rec.querySelector('.t509');
+                            if (wrapper) {
+                                wrapper.addEventListener('displayChanged', function() {
+                                    t509_setHeight('688336712');
+                                });
+                            }
+                        });
+                    });
+                </script>
+            </div>
+            <div id="rec829724378" class="r t-rec" style=" " data-record-type="215">
+                <a name="screenshots" style="font-size:0;"></a>
+            </div>
+            <div id="rec688336711" class="r t-rec" style="background-color:#222222; " data-animationappear="off" data-record-type="675" data-bg-color="#222222">
+                <!-- t675 -->
+                <div class="t675 " style="height:90vh;">
+                    <div class="t-slds">
+                        <div class="t-container_100 t-slds__main">
+                            <div class="t-slds__container">
+                                <ul class="t-slds__arrow_container">
+                                    <li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">
+                                        <button type="button" class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" aria-controls="carousel_688336711" aria-disabled="false" aria-label="Предыдущий слайд" style="width: 30px; height: 30px;background-color: rgba(255,255,255,1);">
+                                            <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 7px;">
+                                                <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">
+                                        <button type="button" class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" aria-controls="carousel_688336711" aria-disabled="false" aria-label="Следующий слайд" style="width: 30px; height: 30px;background-color: rgba(255,255,255,1);">
+                                            <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 7px;">
+                                                <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="t-slds__items-wrapper t-slds_animated-none" id="carousel_688336711" data-slider-transition="300" data-slider-correct-height="true" data-auto-correct-mobile-width="false" aria-roledescription="carousel" aria-live="off">
+                                    <div class="t-slds__item t-slds__item_active" data-slide-index="1" role="group" aria-roledescription="slide" aria-hidden="false" aria-label="1 из 3" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="https://static.tildacdn.com/tild3762-3861-4130-a665-636438383232/994ef302-880e-4ac3-8.png">
+                                        <div class="t-slds__wrapper t-align_center t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3762-3861-4130-a665-636438383232/994ef302-880e-4ac3-8.png" style="height: 90vh;background-image: url('https://thb.tildacdn.com/tild3762-3861-4130-a665-636438383232/-/resizeb/20x/994ef302-880e-4ac3-8.png');">
+                                            <div class="t675__wrapper" style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));">
+                                                <div class="t-container">
+                                                    <div class="t675__textwrapper t-col t-col_6 t-prefix_3 t-align_center">
+                                                        <div class="t675__title t-name t-name_sm" field="li_title__1492791605868" itemprop="name">Спавн сервера</div>
+                                                        <div class="t675__descr t-descr t-descr_xs" field="li_descr__1492791605868" itemprop="description">Строительство нового спавна Vanilla Squad начинается: 20 магазинов, тюрьма, галерея, фэнтези-зона, магическое дерево для новичков и будущий аукцион — всё это создано игроками для игроков!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-slds__item" data-slide-index="2" role="group" aria-roledescription="slide" aria-hidden="true" aria-label="2 из 3" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="https://static.tildacdn.com/tild3835-6261-4263-a564-613035306364/2024-08-03_161334_1.png">
+                                        <div class="t-slds__wrapper t-align_center t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3835-6261-4263-a564-613035306364/2024-08-03_161334_1.png" style="height: 90vh;background-image: url('https://thb.tildacdn.com/tild3835-6261-4263-a564-613035306364/-/resizeb/20x/2024-08-03_161334_1.png');">
+                                            <div class="t675__wrapper" style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));">
+                                                <div class="t-container">
+                                                    <div class="t675__textwrapper t-col t-col_6 t-prefix_3 t-align_center">
+                                                        <div class="t675__title t-name t-name_sm" field="li_title__1492791613439" itemprop="name">Ивент "Музыкальный фестиваль"</div>
+                                                        <div class="t675__descr t-descr t-descr_xs" field="li_descr__1492791613439" itemprop="description">Присоединяйтесь к музыкальному фестивалю на серверах VanillaSquad: живые выступления, конкурсы и море веселья ждут вас!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-slds__item" data-slide-index="3" role="group" aria-roledescription="slide" aria-hidden="true" aria-label="3 из 3" itemscope itemtype="http://schema.org/ImageObject">
+                                        <meta itemprop="image" content="https://static.tildacdn.com/tild3361-6461-4664-b530-376539353131/2024-07-23_203310.png">
+                                        <div class="t-slds__wrapper t-align_center t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.com/tild3361-6461-4664-b530-376539353131/2024-07-23_203310.png" style="height: 90vh;background-image: url('https://thb.tildacdn.com/tild3361-6461-4664-b530-376539353131/-/resizeb/20x/2024-07-23_203310.png');">
+                                            <div class="t675__wrapper" style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));">
+                                                <div class="t-container">
+                                                    <div class="t675__textwrapper t-col t-col_6 t-prefix_3 t-align_center">
+                                                        <div class="t675__title t-name t-name_sm" field="li_title__1492791619387" itemprop="name">Удивительный город "Оболонь"</div>
+                                                        <div class="t675__descr t-descr t-descr_xs" field="li_descr__1492791619387" itemprop="description">Удивительный город "Оболонь", где одна часть расположена на леднике, а другая — в степи. Меня впечатлила инфраструктура, включая снежного мужика, домик из мёда и бункер австрийского художника. Очень рекомендую к посещению! ☺️</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="t-slds__bullet_wrapper">
+                                    <li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+                                        <button type="button" class="t-slds__bullet_body" aria-label="Перейти к слайду 1" aria-current="true" style="width: 10px; height: 10px;background-color: #222222;border: 2px solid #ffffff;"></button>
+                                    </li>
+                                    <li class="t-slds__bullet " data-slide-bullet-for="2">
+                                        <button type="button" class="t-slds__bullet_body" aria-label="Перейти к слайду 2" style="width: 10px; height: 10px;background-color: #222222;border: 2px solid #ffffff;"></button>
+                                    </li>
+                                    <li class="t-slds__bullet " data-slide-bullet-for="3">
+                                        <button type="button" class="t-slds__bullet_body" aria-label="Перейти к слайду 3" style="width: 10px; height: 10px;background-color: #222222;border: 2px solid #ffffff;"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t_sldsInit', function() {
+                            t_sldsInit('688336711');
+                        });
+                        t_onFuncLoad('t675_init', function() {
+                            t675_init('688336711');
+                        });
+                        var rec = document.querySelector('#rec688336711');
+                        if (!rec)
+                            return;
+                        var wrapper = rec.querySelector('.t675');
+                        if (wrapper) {
+                            wrapper.addEventListener('displayChanged', function() {
+                                t_onFuncLoad('t_slds_updateSlider', function() {
+                                    t_slds_updateSlider('688336711');
+                                });
+                            });
+                        }
+                    });
+                </script>
+                <style type="text/css">
+                    #rec688336711 .t-slds__bullet_active .t-slds__bullet_body {
+                        background-color: #ffffff !important;
+                    }
+
+                    #rec688336711 .t-slds__bullet:hover .t-slds__bullet_body {
+                        background-color: #ffffff !important;
+                    }
+
+                    #rec688336711 .t-slds__bullet_body:focus-visible {
+                        background-color: #ffffff !important;
+                    }
+                </style>
+            </div>
+            <div id="rec688336713" class="r t-rec" style=" " data-record-type="215">
+                <a name="hosting" style="font-size:0;"></a>
+            </div>
+            <div id="rec688336714" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="554">
+                <!-- T554 -->
+                <div class="t554" data-display-changed="true">
+                    <div class="t554__general-wrapper t554__general-wrapper_padding t-width t-width_100 t-margin_auto" style="background-color:#3d3d3d;">
+                        <div class="t554__card-wrapper">
+                            <div class="t554__card t-width_5 t-align_left t-animate" data-animate-style="fadein" style="background-color:#3d3d3d; top:180px;">
+                                <div class="t554__title t-heading t-heading_sm" field="title">Низкий пинг и качественное оборудование</div>
+                                <div class="t-text t-descr_sm" field="text">
+                                    Мы стоим на выделенном сервере, такой не найти даже на второй странице результатов запроса «дешёвый хостинг Minecraft», работу его обеспечивает администрация, которая далеко не первый год этим успешно занимается. Мы постоянно следим за обновлениями ядра сервера, оно всегда находится в актуальном состоянии и имеет самые последние исправления и доработки. <br/>
+                                    <br/>
+                                    Процессор: AMD Ryzen 9 7950X <br/>
+                                    <br/>Всё для комфортной и стабильной работы и игры
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t-map-lazyload t554_map" style="width:100%; height:100vh;" data-maplazy-load="false">
+                            <div class="t-map" id="separateMap688336714" data-map-language="" data-map-x="-74.005941" data-map-y="40.7127837" data-map-zoom="18" data-map-title="Низкий пинг и качественное оборудование" data-map-mode="bw_light" style="width:100%; position: relative; height:100vh;" data-map-style='[{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]'></div>
+                            <script type="text/javascript">
+                                var arMapMarkers688336714 = [{
+                                    title: "Датацентр Datacheap",
+                                    descr: "",
+                                    lat: "55.71267",
+                                    lng: "37.689114",
+                                    color: null,
+                                    url: null,
+                                    isOpen: false,
+                                    isHidden: false,
+                                    offset: null,
+                                }, ];
+                                t_onReady(function() {
+                                    t_map_lazyload_add_map();
+                                    window.addEventListener('scroll', t_throttle(t_map_lazyload_add_map, 300));
+                                    function t_map_lazyload_add_map() {
+                                        var windowHeight = window.innerHeight;
+                                        var scrollDiffHeigth = 700;
+                                        var rec = document.getElementById('rec' + 688336714);
+                                        if (!rec)
+                                            return;
+                                        var map = rec.querySelector('.t-map-lazyload');
+                                        if (!map)
+                                            return;
+                                        var blockTop = map.getBoundingClientRect().top + window.pageYOffset;
+                                        if (window.pageYOffset > blockTop - windowHeight - scrollDiffHeigth) {
+                                            if (map.getAttribute('data-maplazy-load') === 'false') {
+                                                map.setAttribute('data-maplazy-load', 'true');
+                                                t_onFuncLoad('t_appendYandexMap', function() {
+                                                    t_appendYandexMap("688336714", "");
+                                                });
+                                            }
+                                        }
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t554__init', function() {
+                            t554__init('688336714');
+                        });
+                    });
+                </script>
+                <style>
+                    #rec688336714 .t554__title {
+                        color: #ffffff;
+                    }
+
+                    #rec688336714 .t-text {
+                        color: #ffffff;
+                    }
+                </style>
+            </div>
+            <div id="rec688336715" class="r t-rec" style=" " data-record-type="215">
+                <a name="rooms" style="font-size:0;"></a>
+            </div>
+            <div id="rec829724634" class="r t-rec" style=" " data-record-type="215">
+                <a name="security" style="font-size:0;"></a>
+            </div>
+            <div id="rec829710694" class="r t-rec t-rec_pt_135 t-rec_pb_135" style="padding-top:135px;padding-bottom:135px; " data-record-type="159">
+                <!-- T147 -->
+                <div class="t147">
+                    <div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject">
+                        <meta itemprop="image" content="https://static.tildacdn.com/tild6436-6339-4463-a263-313933373739/VhvrY2A.png">
+                        <img class="t147__img t147__widthauto t-img t-animate" src="https://thb.tildacdn.com/tild6436-6339-4463-a263-313933373739/-/empty/VhvrY2A.png" data-original="https://static.tildacdn.com/tild6436-6339-4463-a263-313933373739/VhvrY2A.png" imgfield="img" data-animate-style="fadeindown" data-animate-group="yes" data-animate-order="1" data-tu-max-width="1200" data-tu-max-height="1200" alt="">
+                        <div class="t-container_8">
+                            <div class="t147__title t-text t-animate" data-animate-style="fadeindown" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" field="title" itemprop="name">
+                                <strong style="font-size: 30px; font-family: Rubik;">На нашем сервере мы решительно против гриферства, токсичности, читерства и воровства.</strong>
+                                <br/>
+                                <br/>
+                                <span style="font-family: Rubik; font-size: 22px;">На нашем сервере мы строго пресекаем гриферство, наказывая нарушителей и восстанавливая пострадавшие постройки. Мы оснастили систему защиты, которая мгновенно обнаруживает гриферов, позволяя модераторам быстро реагировать на нарушения. Пользователи, нарушающие правила чата, быстро лишаются доступа к нему на длительное время.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rec829725073" class="r t-rec" style=" " data-record-type="215">
+                <a name="history" style="font-size:0;"></a>
+            </div>
+            <div id="rec829712305" class="r t-rec t-rec_pt_135 t-rec_pb_90" style="padding-top:135px;padding-bottom:90px;background-color:#eaf7ff; " data-record-type="795" data-bg-color="#eaf7ff">
+                <!-- T795 -->
+                <div class="t795">
+                    <div class="t-container t-align_center">
+                        <div class="t-col t-col_10 t-prefix_1">
+                            <div class="t795__title t-title t-title_xs t-margin_auto t-animate" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="1" field="title">Сервер работает уже 4 года</div>
+                            <div class="t795__descr t-descr t-descr_xl t-margin_auto t-animate" data-animate-style="fadeinleft" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.3" field="descr">Наш сервер стабильно функционирует уже четыре года, преодолевая финансовые вызовы, которые привели к закрытию множества аналогичных проектов. Мы заботимся о его финансовой устойчивости, чтобы уверенно справляться с возможными трудностями. Наш опыт работы с 2019 года подтверждает высокий уровень надежности и эффективности нашего сервера.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rec829725290" class="r t-rec" style=" " data-record-type="215">
+                <a name="faq" style="font-size:0;"></a>
+            </div>
+            <div id="rec829712894" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px;background-color:#eeeeee; " data-animationappear="off" data-record-type="668" data-bg-color="#eeeeee">
+                <!-- T668 -->
+                <div class="t668">
+                    <div class="t-section__container t-container t-container_flex">
+                        <div class="t-col t-col_12 ">
+                            <div class="t-section__title t-title t-title_xs t-align_center t-margin_auto" field="btitle">Часто задаваемые вопросы
+</div>
+                            <div class="t-section__descr t-descr t-descr_xl t-align_center t-margin_auto" field="bdescr">
+                                Более подробная информация есть <a href="https://docs.vanillasquad.com/" target="_blank" rel="noreferrer noopener">в нашей документации</a>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .t-section__descr {
+                            max-width: 560px;
+                        }
+
+                        #rec829712894 .t-section__title {
+                            margin-bottom: 40px;
+                        }
+
+                        #rec829712894 .t-section__descr {
+                            margin-bottom: 80px;
+                        }
+
+                        @media screen and (max-width: 960px) {
+                            #rec829712894 .t-section__title {
+                                margin-bottom:20px;
+                            }
+
+                            #rec829712894 .t-section__descr {
+                                margin-bottom: 45px;
+                            }
+                        }
+                    </style>
+                    <div class="t-container">
+                        <div class="t668__col t-col t-col_8 t-prefix_2" style="margin-bottom:2px;">
+                            <div class="t668__accordion t-animate" data-animate-style="zoomin" data-animate-chain="yes" data-accordion="false" data-scroll-to-expanded="false">
+                                <div class="t668__wrapper">
+                                    <div class="t668__header ">
+                                        <button type="button" class="t668__trigger-button" aria-controls="accordion1_829712894" aria-expanded="false">
+                                            <span class="t668__title t-name t-name_xl" field="li_title__3437175427190" style="">Нужна ли лицензия?</span>
+                                            <span class="t668__icon">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: transparent;"></span>
+                                            </span>
+                                            <span class="t668__icon t668__icon-hover">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: #eee;"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="t668__content" id="accordion1_829712894" hidden>
+                                        <div class="t668__textwrapper">
+                                            <div class="t668__text t-descr t-descr_xs" field="li_descr__3437175427190" style="">Нет, сервер пиратский. Лицензия не обязательна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t668__col t-col t-col_8 t-prefix_2" style="margin-bottom:2px;">
+                            <div class="t668__accordion t-animate" data-animate-style="zoomin" data-animate-chain="yes" data-accordion="false" data-scroll-to-expanded="false">
+                                <div class="t668__wrapper">
+                                    <div class="t668__header ">
+                                        <button type="button" class="t668__trigger-button" aria-controls="accordion2_829712894" aria-expanded="false">
+                                            <span class="t668__title t-name t-name_xl" field="li_title__3437175427191" style="">Сколько длиться сезон?</span>
+                                            <span class="t668__icon">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: transparent;"></span>
+                                            </span>
+                                            <span class="t668__icon t668__icon-hover">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: #eee;"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="t668__content" id="accordion2_829712894" hidden>
+                                        <div class="t668__textwrapper">
+                                            <div class="t668__text t-descr t-descr_xs" field="li_descr__3437175427191" style="">
+                                                Минимум 6 месяцев.<br/>Окончательная продолжительность сезона зависит от выхода новых версий и интереса игроков к серверу.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t668__col t-col t-col_8 t-prefix_2" style="margin-bottom:2px;">
+                            <div class="t668__accordion t-animate" data-animate-style="zoomin" data-animate-chain="yes" data-accordion="false" data-scroll-to-expanded="false">
+                                <div class="t668__wrapper">
+                                    <div class="t668__header ">
+                                        <button type="button" class="t668__trigger-button" aria-controls="accordion3_829712894" aria-expanded="false">
+                                            <span class="t668__title t-name t-name_xl" field="li_title__3437175427192" style="">Доступ на сервере правда бесплатный?</span>
+                                            <span class="t668__icon">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: transparent;"></span>
+                                            </span>
+                                            <span class="t668__icon t668__icon-hover">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: #eee;"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="t668__content" id="accordion3_829712894" hidden>
+                                        <div class="t668__textwrapper">
+                                            <div class="t668__text t-descr t-descr_xs" field="li_descr__3437175427192" style="">Наш сервер предоставляется абсолютно бесплатно для всех игроков. Однако, для того чтобы получить доступ к игре, необходимо привязать свой аккаунт к Discord. Это позволит нам обеспечить безопасность игрового процесса и улучшить коммуникацию между участниками сообщества.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t668__col t-col t-col_8 t-prefix_2" style="margin-bottom:2px;">
+                            <div class="t668__accordion t-animate" data-animate-style="zoomin" data-animate-chain="yes" data-accordion="false" data-scroll-to-expanded="false">
+                                <div class="t668__wrapper">
+                                    <div class="t668__header ">
+                                        <button type="button" class="t668__trigger-button" aria-controls="accordion4_829712894" aria-expanded="false">
+                                            <span class="t668__title t-name t-name_xl" field="li_title__1732273453684" style="">Когда был последний вайп и когда будет следующий?</span>
+                                            <span class="t668__icon">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: transparent;"></span>
+                                            </span>
+                                            <span class="t668__icon t668__icon-hover">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: #eee;"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="t668__content" id="accordion4_829712894" hidden>
+                                        <div class="t668__textwrapper">
+                                            <div class="t668__text t-descr t-descr_xs" field="li_descr__1732273453684" style="">Новый сезон начался 26 октября 2024 года.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t668__col t-col t-col_8 t-prefix_2" style="margin-bottom:2px;">
+                            <div class="t668__accordion t-animate" data-animate-style="zoomin" data-animate-chain="yes" data-accordion="false" data-scroll-to-expanded="false">
+                                <div class="t668__wrapper">
+                                    <div class="t668__header ">
+                                        <button type="button" class="t668__trigger-button" aria-controls="accordion5_829712894" aria-expanded="false">
+                                            <span class="t668__title t-name t-name_xl" field="li_title__1732273459406" style="">Есть запрещенные фермы, порезаны ли механики?</span>
+                                            <span class="t668__icon">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: transparent;"></span>
+                                            </span>
+                                            <span class="t668__icon t668__icon-hover">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: #eee;"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="t668__content" id="accordion5_829712894" hidden>
+                                        <div class="t668__textwrapper">
+                                            <div class="t668__text t-descr t-descr_xs" field="li_descr__1732273459406" style="">
+                                                На сервере есть 2 отдельных мира. Для ферм и для построек. В мире ферм нет ограничений по тому, какие фермы можно строить, если это не фермы, которые используют баги или дюп.<br/>В мире ферм стоит повышенный спавнрейт. Он будет одинаковым даже с большим онлайном, поэтому фермы будут максимально эффективными.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t668__col t-col t-col_8 t-prefix_2" style="margin-bottom:2px;">
+                            <div class="t668__accordion t-animate" data-animate-style="zoomin" data-animate-chain="yes" data-accordion="false" data-scroll-to-expanded="false">
+                                <div class="t668__wrapper">
+                                    <div class="t668__header ">
+                                        <button type="button" class="t668__trigger-button" aria-controls="accordion6_829712894" aria-expanded="false">
+                                            <span class="t668__title t-name t-name_xl" field="li_title__1732273468728" style="">Можно играть с телефона, Bedrock Edition?</span>
+                                            <span class="t668__icon">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: transparent;"></span>
+                                            </span>
+                                            <span class="t668__icon t668__icon-hover">
+                                                <span class="t668__lines">
+                                                    <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                            <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                                                <path d="M0,11 L22,11"></path>
+                                                                <path d="M11,0 L11,22"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                                <span class="t668__circle" style="background-color: #eee;"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="t668__content" id="accordion6_829712894" hidden>
+                                        <div class="t668__textwrapper">
+                                            <div class="t668__text t-descr t-descr_xs" field="li_descr__1732273468728" style="">К сожалению, в Bedrock Edition игра с мобильных телефонов не поддерживается. Однако, существует альтернатива - PojavLauncher, который позволяет запускать Minecraft: Java Edition на устройствах с операционной системой Android. Это может быть хорошим вариантом для игры в Minecraft на вашем мобильном устройстве.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t668_init', function() {
+                            t668_init('829712894');
+                        });
+                    });
+                </script>
+            </div>
+            <div id="rec829725532" class="r t-rec" style=" " data-record-type="215">
+                <a name="start" style="font-size:0;"></a>
+            </div>
+            <div id="rec829716547" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; " data-record-type="1106">
+                <!-- t1106 -->
+                <div class="t1106">
+                    <div class="t-section__container t-container t-container_flex">
+                        <div class="t-col t-col_12 ">
+                            <div class="t-section__title t-title t-title_xs t-align_center t-margin_auto t-animate" data-animate-style="fadein" data-animate-group="yes" field="btitle">Как начать играть?
+</div>
+                        </div>
+                    </div>
+                    <style>
+                        .t-section__descr {
+                            max-width: 560px;
+                        }
+
+                        #rec829716547 .t-section__title {
+                            margin-bottom: 105px;
+                        }
+
+                        #rec829716547 .t-section__descr {
+                        }
+
+                        @media screen and (max-width: 960px) {
+                            #rec829716547 .t-section__title {
+                                margin-bottom:45px;
+                            }
+                        }
+                    </style>
+                    <div class="t-container">
+                        <div class="t1106__col t-item t-col t-col_4">
+                            <div class="t1106__numberwrapper t-animate" data-animate-style="fadein" data-animate-group="yes" data-animate-order="1">
+                                <div class="t1106__number">
+                                    <div class="t1106__digit t-name t-name_xs">1</div>
+                                </div>
+                                <div class="t1106__line"></div>
+                                <div class="t1106__line_mobile"></div>
+                            </div>
+                            <div class="t1106__textwrapper t-align_left t-animate" data-animate-style="fadein" data-animate-chain="yes">
+                                <div class="t1106__title t-name t-name_md" field="li_title__3596828002930">
+                                    <strong>Присоединитесь к нашему Discord-сообществу</strong>
+                                </div>
+                                <div class="t1106__text t-text t-text_xs" field="li_descr__3596828002930">
+                                    Наш Discord-сервер - это место, где собираются наши игроки, обсуждают новости и идеи, а также находят партнеров для игры. Присоединиться легко, просто перейдите по <a href="https://dsc.gg/vsquad" target="_blank" rel="noreferrer noopener">по ссылке</a>
+                                    и станьте частью Vanilla Squad!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t1106__col t-item t-col t-col_4">
+                            <div class="t1106__numberwrapper t-animate" data-animate-style="fadein" data-animate-group="yes" data-animate-order="1">
+                                <div class="t1106__number">
+                                    <div class="t1106__digit t-name t-name_xs">2</div>
+                                </div>
+                                <div class="t1106__line"></div>
+                                <div class="t1106__line_mobile"></div>
+                            </div>
+                            <div class="t1106__textwrapper t-align_left t-animate" data-animate-style="fadein" data-animate-chain="yes">
+                                <div class="t1106__title t-name t-name_md" field="li_title__3596828002931">
+                                    <strong>Получите свой уникальный код</strong>
+                                </div>
+                                <div class="t1106__text t-text t-text_xs" field="li_descr__3596828002931">
+                                    Войдите на наш сервер Minecraft, используя IP адрес: <strong>MC.VANILLASQUAD.COM</strong>
+                                    . Как только вы в игре, обратите внимание на четыре цифры, которые появятся.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t1106__col t-item t-col t-col_4">
+                            <div class="t1106__numberwrapper t-animate" data-animate-style="fadein" data-animate-group="yes" data-animate-order="1">
+                                <div class="t1106__number">
+                                    <div class="t1106__digit t-name t-name_xs">3</div>
+                                </div>
+                                <div class="t1106__line"></div>
+                                <div class="t1106__line_mobile"></div>
+                            </div>
+                            <div class="t1106__textwrapper t-align_left t-animate" data-animate-style="fadein" data-animate-chain="yes">
+                                <div class="t1106__title t-name t-name_md" field="li_title__3596828002932">Отправьте код для игры</div>
+                                <div class="t1106__text t-text t-text_xs" field="li_descr__3596828002932">
+                                    Отправьте полученные цифры при входе на сервер прямо в канале Discord <a href="https://discord.com/channels/660357711174696970/1188736804480888903" target="_blank" rel="noreferrer noopener">#⁠отправь-код-сюда</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style></style>
+            </div>
+            <div id="rec782583316" class="r t-rec t-rec_pt_135 t-rec_pb_135" style="padding-top:135px;padding-bottom:135px;background-color:#141414; " data-animationappear="off" data-record-type="992" data-bg-color="#141414">
+                <!-- T992 -->
+                <div class="t-container">
+                    <div class="t-col t-col_8 t-prefix_2">
+                        <div class="t992" data-navmarker="nav782583316marker" data-menu="yes">
+                            <div class="t992__imgwrapper t-align_center">
+                                <img class="t992__img" src="https://static.tildacdn.com/tild3461-3230-4230-a138-316130373734/image_987.png" imgfield="img" style="width:55px;" alt="Присоединяйтесь к серверу VanillaSquad — вам обязательно понравится!">
+                            </div>
+                            <div class="t992__title t-section__title t-heading t-heading_xs t-align_center" field="title">Присоединяйтесь к серверу VanillaSquad — вам обязательно понравится!</div>
+                            <div class="t992__wrapper t992__wrapper_aligncenter">
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="#rec688336707" data-menu-submenu-hook="">Главная</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="#rec688336710" data-menu-submenu-hook="">О сервере</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://map.vanillasquad.com/" data-menu-submenu-hook="">Карта</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://donate.vanillasquad.com/" data-menu-submenu-hook="">Магазин</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://docs.vanillasquad.com/" data-menu-submenu-hook="">Документация</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://banlist.vanillasquad.com/" data-menu-submenu-hook="">Бан-лист</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://docs.vanillasquad.com/osnovnye/pravila-servera" data-menu-submenu-hook="">Правила сервера</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://docs.vanillasquad.com/drugoe/polzovatelskoe-soglashenie" data-menu-submenu-hook="">Пользовательское соглашние</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://modpack.vanillasquad.com/?project=5hl1btyZ" data-menu-submenu-hook="">Скачать сборку сервера</a>
+                                </div>
+                                <div class="t992__list-item">
+                                    <a class="t992__menu-link t992__menu-link_small t-descr" style="background-color: #FFFFFF; border-color:transparent; border-width:1px;" href="https://docs.vanillasquad.com/osnovnye/chasto-zadavaemye-voprosy" data-menu-submenu-hook="">Часто задаваемые вопросы</a>
+                                </div>
+                            </div>
+                            <div class="t-align_center">
+                                <div class="t992__descr t-section__descr t-descr t-descr_xs" field="text" style="">
+                                    © 2019-2024 Комплекс игровых серверов Minecraft "VanillaSquad"<br/>
+                                    Сервер подключен к системе KAS.<br/>
+                                    <br/>
+                                    <span style="color: rgb(255, 255, 255);">Авторские права на Minecraft и связанные с ним изображения принадлежат Mojang и Microsoft. </span>
+                                    <br/>
+                                    <span style="color: rgb(255, 255, 255);">НЕ ЯВЛЯЕТСЯ ОФИЦИАЛЬНЫМ СЕРВИСОМ MINECRAFT. </span>
+                                    <br/>
+                                    <span style="color: rgb(255, 255, 255);">НЕ ОДОБРЕНО И НЕ СВЯЗАНО С MOJANG ИЛИ MICROSOFT.</span>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    Проголосовать за сервер<br/>
+                                    <a href="https://mcrating.org" style="color: rgb(255, 255, 255);">https://mcrating.org</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    t_onReady(function() {
+                        t_onFuncLoad('t992_init', function() {
+                            t992_init('782583316');
+                        });
+                    });
+                </script>
+                <style>
+                    #rec782583316 .t-active.t992__menu-link {
+                        border-color: transparent!important;
+                        background-color: #393939!important;
+                        color: #fff!important;
+                    }
+
+                    #rec782583316 .t992__list-item a {
+                        text-align: center;
+                    }
+                </style>
+                <style>
+                    #rec782583316 .t992__menu-link {
+                        border-radius: 30px;
+                    }
+                </style>
+            </div>
+            <div id="rec843514833" class="r t-rec" style=" " data-animationappear="off" data-record-type="131">
+                <!-- T123 -->
+                <div class="t123">
+                    <div class="t-container_100 ">
+                        <div class="t-width t-width_100 ">
+                            <!-- nominify begin -->
+                            <center>
+                                <br>
+                                Html code will be here<br>
+                                <br>
+                            </center>
+                            <!-- nominify end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rec832849290" class="r t-rec" style=" " data-record-type="270">
+                <div class="t270"></div>
+                <script>
+                    t_onReady(function() {
+                        var hash = window.location.hash;
+                        t_onFuncLoad('t270_scroll', function() {
+                            t270_scroll(hash, -3);
+                        });
+                        setTimeout(function() {
+                            var curPath = window.location.pathname;
+                            var curFullPath = window.location.origin + curPath;
+                            var recs = document.querySelectorAll('.r');
+                            Array.prototype.forEach.call(recs, function(rec) {
+                                var selects = 'a[href^="#"]:not([href="#"]):not(.carousel-control):not(.t-carousel__control):not([href^="#price"]):not([href^="#submenu"]):not([href^="#popup"]):not([href*="#zeropopup"]):not([href*="#closepopup"]):not([href*="#closeallpopup"]):not([href^="#prodpopup"]):not([href^="#order"]):not([href^="#!"]):not([target="_blank"]),' + 'a[href^="' + curPath + '#"]:not([href*="#!/tfeeds/"]):not([href*="#!/tproduct/"]):not([href*="#!/tab/"]):not([href*="#popup"]):not([href*="#zeropopup"]):not([href*="#closepopup"]):not([href*="#closeallpopup"]):not([target="_blank"]),' + 'a[href^="' + curFullPath + '#"]:not([href*="#!/tfeeds/"]):not([href*="#!/tproduct/"]):not([href*="#!/tab/"]):not([href*="#popup"]):not([href*="#zeropopup"]):not([href*="#closepopup"]):not([href*="#closeallpopup"]):not([target="_blank"])';
+                                var elements = rec.querySelectorAll(selects);
+                                Array.prototype.forEach.call(elements, function(element) {
+                                    element.addEventListener('click', function(event) {
+                                        event.preventDefault();
+                                        var hash = this.hash.trim();
+                                        t_onFuncLoad('t270_scroll', function() {
+                                            t270_scroll(hash, -3);
+                                        });
+                                    });
+                                });
+                            });
+                            if (document.querySelectorAll('.js-store').length > 0 || document.querySelectorAll('.js-feed').length > 0) {
+                                t_onFuncLoad('t270_scroll', function() {
+                                    t270_scroll(hash, -3, 1);
+                                });
+                            }
+                        }, 500);
+                        setTimeout(function() {
+                            var hash = window.location.hash;
+                            if (hash && document.querySelectorAll('a[name="' + hash.slice(1) + '"], div[id="' + hash.slice(1) + '"]').length > 0) {
+                                if (window.isMobile) {
+                                    t_onFuncLoad('t270_scroll', function() {
+                                        t270_scroll(hash, 0);
+                                    });
+                                } else {
+                                    t_onFuncLoad('t270_scroll', function() {
+                                        t270_scroll(hash, 0);
+                                    });
+                                }
+                            }
+                        }, 1000);
+                        window.addEventListener('popstate', function() {
+                            var hash = window.location.hash;
+                            if (hash && document.querySelectorAll('a[name="' + hash.slice(1) + '"], div[id="' + hash.slice(1) + '"]').length > 0) {
+                                if (window.isMobile) {
+                                    t_onFuncLoad('t270_scroll', function() {
+                                        t270_scroll(hash, 0);
+                                    });
+                                } else {
+                                    t_onFuncLoad('t270_scroll', function() {
+                                        t270_scroll(hash, 0);
+                                    });
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <!--/allrecords-->
+        <!-- Tilda copyright. Don't remove this line -->
+        <div class="t-tildalabel " id="tildacopy" data-tilda-sign="7833059#42569045">
+            <a href="https://tilda.cc/" class="t-tildalabel__link">
+                <div class="t-tildalabel__wrapper">
+                    <div class="t-tildalabel__txtleft">Made on </div>
+                    <div class="t-tildalabel__wrapimg">
+                        <img src="https://static.tildacdn.com/img/tildacopy.png" class="t-tildalabel__img" fetchpriority="low" alt="">
+                    </div>
+                    <div class="t-tildalabel__txtright">Tilda</div>
+                </div>
+            </a>
+        </div>
+        <!-- Stat -->
+        <!-- Yandex.Metrika counter 97765653 -->
+        <script type="text/javascript" data-tilda-cookie-type="analytics">
+            setTimeout(function() {
+                (function(m, e, t, r, i, k, a) {
+                    m[i] = m[i] || function() {
+                        (m[i].a = m[i].a || []).push(arguments)
+                    }
+                    ;
+                    m[i].l = 1 * new Date();
+                    k = e.createElement(t),
+                    a = e.getElementsByTagName(t)[0],
+                    k.async = 1,
+                    k.src = r,
+                    a.parentNode.insertBefore(k, a)
+                }
+                )(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+                window.mainMetrikaId = '97765653';
+                ym(window.mainMetrikaId, "init", {
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true,
+                    ecommerce: "dataLayer"
+                });
+            }, 2000);
+        </script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/97765653" style="position:absolute; left:-9999px;" alt=""/>
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+        <script type="text/javascript">
+            if (!window.mainTracker) {
+                window.mainTracker = 'tilda';
+            }
+            window.tildastatcookie = 'no';
+            window.tildastatscroll = 'yes';
+            setTimeout(function() {
+                (function(d, w, k, o, g) {
+                    var n = d.getElementsByTagName(o)[0]
+                      , s = d.createElement(o)
+                      , f = function() {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.key = k;
+                    s.id = "tildastatscript";
+                    s.src = g;
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else {
+                        f();
+                    }
+                }
+                )(document, window, '5ed50132971f5c152db6ece3f996352e', 'script', 'https://static.tildacdn.com/js/tilda-stat-1.0.min.js');
+            }, 2000);
+        </script>
+    </body>
+</html>
