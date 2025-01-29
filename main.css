@@ -1,185 +1,606 @@
-html,
-label {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+/* Светлая тема */
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: #5c3b7c;
+    /* Новый темный фон */
+    color: #e0e0e0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+/* Светлая тема header */
+body.light-theme header {
+    background-color: #333;
     color: white;
-    font-size: 1.5rem;
 }
 
-input {
-    width: 4rem;
-    height: 4rem;
+/* Темная тема header */
+body.dark-theme header {
+    background-color: #4e3069;
+    /* Новый темный фон хедера*/
+    color: #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.confetti-container {
-    user-select: none;
-    z-index: 10;
+header h1:hover {
+    transform: scale(1.1);
 }
 
-.confetti {
-    position: fixed;
+header nav {
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease, padding 0.3s ease;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a img {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Светлая тема nav */
+body.light-theme header nav ul li a {
+    color: white;
+}
+
+/* Темная тема nav */
+body.dark-theme header nav ul li a {
+    color: #e0e0e0;
+}
+
+/* Кнопка переключения темы */
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для свитч */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Круглые ползунки */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.theme-icon {
+    font-size: 20px;
+    margin-left: 5px;
+    display: none;
+}
+
+.sun-icon {
+    color: yellow;
+    display: inline-block;
+}
+
+body.dark-theme .moon-icon {
+    color: #ddd;
+    display: inline-block;
+}
+
+body.dark-theme .sun-icon {
+    display: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Добавляем затемнение для фона */
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+body.light-theme section::before {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Скрываем затемнение и делаем его более прозрачным при наведении */
+section:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme section:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Текст должен быть поверх затемнения, ставим z-index */
+section>* {
+    position: relative;
+    z-index: 1;
+}
+
+body.light-theme section {
+    background-color: white;
+}
+
+body.dark-theme section {
+    background-color: #4e3069;
+    /* Новый темный фон секций */
+    color: #e0e0e0;
+}
+
+section h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+body.light-theme section h2 {
+    border-color: #eee;
+}
+
+body.dark-theme section h2 {
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+section ul,
+section ol {
+    padding-left: 20px;
+}
+
+section ol {
+    list-style-type: decimal;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.light-theme footer {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-theme footer {
+    background-color: #4e3069;
+    /* Новый темный фон футера */
+    color: #e0e0e0;
+}
+
+.gallery-container {
     display: flex;
-    /* width: 600px; */
-    /* height: 600px; */
-    /* overflow: hidden; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.confetti .square {
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--bg);
-    transform: rotate(-140deg);
+.gallery-item {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.confetti .rectangle {
-    width: 1rem;
-    height: 0.5rem;
-    background-color: var(--bg);
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
-.confetti .hexagram {
-    width: 0;
-    height: 0;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
-    border-bottom: 1rem solid var(--bg);
-    position: relative;
+.gallery-item:hover img {
+    transform: scale(1.1);
 }
 
-.confetti .hexagram:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
-    border-top: 1rem solid var(--bg);
-    position: absolute;
-    top: 0.33rem;
-    left: -0.5rem;
+.custom-block {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+    background-image: none;
 }
 
-.confetti .pentagram {
-    width: 0rem;
-    height: 0rem;
+.custom-block:hover {
+    transform: translateY(-5px);
+}
+
+body.dark-theme .custom-block {
+    background-color: #5c3b7c;
+    color: #e0e0e0;
+}
+
+.contact-form {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+.contact-form button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1976d2;
+}
+
+/* Стили для вики */
+.wiki-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wiki-nav {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.wiki-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.wiki-nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.wiki-nav ul li a:hover,
+.wiki-nav ul li a.active {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .wiki-nav ul li a:hover,
+body.dark-theme .wiki-nav ul li a.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#wiki-search {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+}
+
+body.dark-theme #wiki-search {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+#wiki-search:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+.wiki-content {
+    margin-bottom: 20px;
+}
+
+.wiki-section {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+}
+
+.wiki-section.active {
     display: block;
-    margin: 0.5rem 0;
-    border-right: 1rem solid transparent;
-    border-bottom: 0.7rem solid var(--bg);
-    border-left: 1rem solid transparent;
-    transform: rotate(35deg);
-    position: relative;
 }
 
-.confetti .pentagram:before {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    border-bottom: 0.8rem solid var(--bg);
-    border-left: 0.3rem solid transparent;
-    border-right: 0.3rem solid transparent;
-    transform: rotate(-35deg);
-    position: absolute;
-    top: -0.45rem;
-    left: -0.65rem;
+.wiki-editor {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
 }
 
-.confetti .pentagram:after {
-    content: "";
-    width: 0rem;
-    height: 0rem;
-    display: block;
-    border-right: 1rem solid transparent;
-    border-bottom: 0.7rem solid var(--bg);
-    border-left: 1rem solid transparent;
-    transform: rotate(-70deg);
-    position: absolute;
-    top: 0.03rem;
-    left: -1.05rem;
+body.dark-theme .wiki-editor {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
+    border: 1px solid #555;
 }
 
-.confetti .dodecagram {
-    background: var(--bg);
-    width: 0.8rem;
-    height: 0.8rem;
-    position: relative;
+.wiki-editor:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
 }
 
-.confetti .dodecagram:before {
-    content: "";
-    height: 0.8rem;
-    width: 0.8rem;
-    background: var(--bg);
-    transform: rotate(30deg);
-    position: absolute;
-    top: 0;
-    left: 0;
+.wiki-save {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.confetti .dodecagram:after {
-    content: "";
-    height: 0.8rem;
-    width: 0.8rem;
-    background: var(--bg);
-    transform: rotate(60deg);
-    position: absolute;
-    top: 0;
-    left: 0;
+.wiki-save:hover {
+    background-color: #1976d2;
 }
 
-.confetti .wavy-line {
-    position: relative;
+/* Анимации */
+section {
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.confetti .wavy-line::after,
-.confetti .wavy-line::before {
-    content: "";
-    height: 1rem;
-    width: 8rem;
-    background-size: 2rem 1rem;
-    position: absolute;
-    left: -9rem;
-    transform: rotate(90deg);
+header h1 {
+    animation: slideInLeft 0.7s ease;
 }
 
-.confetti .wavy-line::before {
-    background-image: linear-gradient(45deg,
-            transparent,
-            transparent 50%,
-            var(--bg) 50%,
-            transparent 60%);
-    top: 1rem;
+header nav {
+    animation: slideInRight 0.7s ease;
 }
 
-.confetti .wavy-line::after {
-    background-image: linear-gradient(-45deg,
-            transparent,
-            transparent 50%,
-            var(--bg) 50%,
-            transparent 60%);
+footer {
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
-.confetti i {
-    width: 3rem;
-    height: 3rem;
-    margin: 0 0.2rem;
-    animation-name: confetti;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: calc(70s / var(--speed));
+.theme-switch {
+    animation: slideInRight 0.7s ease;
 }
 
-.confetti i:nth-child(even) {
-    transform: rotate(90deg);
-}
-
-@keyframes confetti {
-    0% {
-        transform: translateY(-100vh);
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
     }
 
-    100% {
-        transform: translateY(100vh);
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Дополнительные стили для больших экранов */
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+}
+
+body {
+    color: black;
+    /* Стиль для светлой темы */
+    background-color: white;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        /* Стиль для тёмной темы */
+        background-color: #333;
     }
 }
