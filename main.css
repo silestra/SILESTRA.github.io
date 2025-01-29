@@ -592,15 +592,3 @@ footer {
     }
 }
 
-body {
-    color: black;
-    /* Стиль для светлой темы */
-    background-color: white;
-}
-@media (prefers-color-scheme: dark) {
-    body {
-        color: white;
-        /* Стиль для тёмной темы */
-        background-color: #333;
-    }
-}
