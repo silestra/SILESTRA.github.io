@@ -7,16 +7,21 @@ body {
 }
 
 /* Светлая тема */
+
 body.light-theme {
     background-color: #f4f4f4;
     color: #333;
+    .t1106__line {
+        color: #333;
+    }
 }
 
 /* Темная тема */
 body.dark-theme {
-    background-color: #5c3b7c;
+    background-color: #0d0a1c;
     /* Новый темный фон */
     color: #e0e0e0;
+    p , span , strong {color: #e0e0e0;}
 }
 
 .container {
@@ -225,13 +230,6 @@ body.light-theme section::before {
 }
 
 /* Скрываем затемнение и делаем его более прозрачным при наведении */
-section:hover::before {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-body.light-theme section:hover::before {
-    background-color: rgba(0, 0, 0, 0.2);
-}
 
 /* Текст должен быть поверх затемнения, ставим z-index */
 section>* {
@@ -239,100 +237,8 @@ section>* {
     z-index: 1;
 }
 
-body.light-theme section {
-    background-color: white;
-}
 
-body.dark-theme section {
-    background-color: #4e3069;
-    /* Новый темный фон секций */
-    color: #e0e0e0;
-}
 
-section h2 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    transition: border-color 0.3s ease;
-}
-
-body.light-theme section h2 {
-    border-color: #eee;
-}
-
-body.dark-theme section h2 {
-    border-color: #444;
-    color: #e0e0e0;
-}
-
-section ul,
-section ol {
-    padding-left: 20px;
-}
-
-section ol {
-    list-style-type: decimal;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-body.light-theme footer {
-    background-color: #333;
-    color: white;
-}
-
-body.dark-theme footer {
-    background-color: #4e3069;
-    /* Новый темный фон футера */
-    color: #e0e0e0;
-}
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.gallery-item {
-    width: 200px;
-    height: 150px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.custom-block {
-    background-color: #e0e0e0;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #333;
-    transition: transform 0.3s ease-in-out;
-    background-image: none;
-}
-
-.custom-block:hover {
-    transform: translateY(-5px);
-}
 
 body.dark-theme .custom-block {
     background-color: #5c3b7c;
