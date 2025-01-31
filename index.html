@@ -22,6 +22,7 @@
         <!-- Assets -->
         <link rel="stylesheet" href="main.css">
         <script defer src="main.js"></script>
+        <script defer src="script.js"></script>
         <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script>
         <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/>
         <link rel="stylesheet" href="https://static.tildacdn.com/ws/project7833059/tilda-blocks-page42569045.min.css?t=1734814853" type="text/css" media="all" onerror="this.loaderr='y';"/>
@@ -63,6 +64,8 @@
                 ;
             }
         </script>
+        <script defer src="script.js"></script>
+        <script defer src="main.js"></script>
         <script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script>
         <script src="https://static.tildacdn.com/ws/project7833059/tilda-blocks-page42569045.min.js?t=1734814853" charset="utf-8" async onerror="this.loaderr='y';"></script>
         <script src="https://static.tildacdn.com/js/tilda-lazyload-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
@@ -105,7 +108,13 @@
             )();
         </script>
     </head>
-    <body class="t-body light-theme">
+    <body>
+    <div class="header">
+        <div class="logo">play.silestra.ru</div>
+    </div>
+    <div id="notification" class="notification">Текст скопирован!</div>
+    
+    <script src="script.js"></script>
         <!--allrecords-->
         <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="7833059" data-tilda-page-id="42569045" data-tilda-formskey="181b659822907a699c38876ce7833059" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="com">
             <div id="rec688336706" class="r t-rec" style=" " data-animationappear="off" data-record-type="257">
@@ -561,7 +570,7 @@
 </a>
                                     </li>
                                     <li class="t228__list_item" style="padding:0 15px;">
-                                        <a class="t-menu__link-item" href="#about" data-menu-submenu-hook="" data-menu-item-number="2">О сервере
+                                        <a class="t-menu__link-item" href="#rec688336710" data-menu-submenu-hook="" data-menu-item-number="2">О сервере
 </a>
                                     </li>
                                     <li class="t228__list_item" style="padding:0 15px;">
@@ -773,6 +782,7 @@
                     </div>
                 </div>
             </div>
+
             <div id="rec832847370" class="r t-rec" style=" " data-animationappear="off" data-record-type="971">
                 <!-- T971 -->
 
@@ -800,6 +810,9 @@
                 <div class="t-cover__filter"
                     style="height: 1295px; background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));">
                 </div>
+
+
+
                 <div class="t-container">
                     <div class="t-width t-width_10" style="margin:0 auto;">
                         <div class="t-cover__wrapper t-valign_middle" style="height: 1295px; position: relative; z-index: 1;">
@@ -880,7 +893,8 @@
                             <div class="t-section__title t-title t-title_xs t-align_center t-margin_auto t-animate" data-animate-style="fadeindown" data-animate-group="yes" field="btitle"><span>О сервере</span>
 </div>
                             <div class="t-section__descr t-descr t-descr_xl t-align_center t-margin_auto t-animate" data-animate-style="fadeindown" data-animate-group="yes" field="bdescr">
-                                <p style="text-align: center;">Добро пожаловать на сервер Silestra, уникальное игровое пространство для любителей vanilla+ Minecraft. Здесь каждый найдет
+                                <p style="text-align: center;">Добро пожаловать на сервер Silestra, уникальное игровое пространство для любителей v
+                                Vanilla+ Minecraft. Здесь каждый найдет
                                 что-то по душе: от строительства замков до сражений с монстрами. Наслаждайтесь дружелюбной атмосферой, заводите друзей и
                                 погружайтесь в захватывающие приключения.</p>
                             </div>
@@ -933,7 +947,7 @@
                         </li>
                         <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
                             <div class="t503__content t-align_center">
-                                <img class="t503__img t-img" src="" data-original="" imgfield="li_img__1476976315081" style="width:90px;" alt="">
+                                <img class="t503__img t-img" src="https://optim.tildacdn.com/tild6335-3538-4634-a433-313963616531/-/resize/108x/-/format/webp/637948173294758191.png" data-original="" imgfield="li_img__1476976315081" style="width:90px;" alt="">
                                 <div class="t-card__title t-name t-name_md" field="li_title__1476976315081">
                                     <p style="text-align: center;">
                                         <strong style="font-size: 22px;">Вступайте в города</strong>
@@ -969,17 +983,17 @@
                                 </style>
                             </div>
                         </li>
-                            <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item t-animate" data-animate-style="fadeindown" data-animate-chain="yes">
-                                <div class="t503__content t-align_center">
-                                    <img class="t503__img t-img" src="maxresdefault.png" data-original="tort.png" imgfield="li_img__1476976334035" style="width:90px;" alt="">
+                            <li class="t-card__col t-card__col_withoutbtn t-col t-col_4 t-item" data-animate-style="fadeindown"
+                                data-animate-chain="yes">
+                                <div class="t503__content t-align_center"> <img class="t503__img t-img loaded"
+                                        src="https://optim.tildacdn.com/tild3066-6436-4531-b131-633961613138/-/resize/108x/-/format/webp/Narru_Pig.png"
+                                        data-original="https://static.tildacdn.com/tild3066-6436-4531-b131-633961613138/Narru_Pig.png"
+                                        imgfield="li_img__1476976334035" style="width:90px;" alt="">
                                     <div class="t-card__title t-name t-name_md" field="li_title__1476976334035">
-                                        <p style="text-align: center;">
-                                            <strong style="font-size: 22px;">Участвуйте ивентах</strong>
-                                        </p>
-                                        <br/>
+                                        <p style="text-align: center;"><strong style="font-size: 22px;">Участвуйте в ивентах</strong></p><br>
                                         <p style="text-align: center;">У нас на сервере регулярно проходят разнообразные ивенты, в которых вы можете принимать участие! Кроме того, у вас есть
                                         возможность участвовать в аукционах и различных событиях. Не упустите шанс проявить свои навыки и заработать полезные
-                                        призы!</p>
+                                        призы</p>
                                     </div>
                                     <style>
                                         #rec688336710 .t-card__title {
@@ -996,7 +1010,7 @@
                                         <strong style="font-size: 22px;">Делайте свой выбор</strong>
                                     </p>
                                     <br/>
-                                    <p style="text-align: center;">На нашем сервере управление осуществляется самими игроками, которые выбираются путем голосования. Это демократический
+                                    <p style="text-align: center;"> На нашем сервере управление осуществляется самими игроками, которые выбираются путем голосования. Это демократический
                                     подход, позволяющий каждому внести свой вклад и оказать влияние на развитие мира. Присоединяйтесь к роли игроков и
                                     помогите сформировать уникальное общество на нашем сервере!</p>
                                 </div>
@@ -1017,7 +1031,10 @@
                                         <strong style="font-size: 22px;">Придумай свою игру</strong>
                                     </p>
                                     <br/>
-                                    <p style="text-align: center;">На сервере у нас есть одно важное правило: игра строится на отношениях между игроками в ванильном Minecraft, и мы призываем каждого участника придумывать свои собственные правила, которые помогут сделать наше сообщество ещё лучше и интереснее. Главное, чтобы эти правила соблюдали дух сотрудничества, уважения и взаимопонимания между всеми участниками.</p>
+                                    <p style="text-align: center;">На нашем сервере Minecraft существует важное правило: игра строится на взаимодействии между игроками. Мы призываем
+                                    каждого участника создать свои уникальные правила, которые сделают наше сообщество более интересным и увлекательным.
+                                    Главное, чтобы эти правила были направлены на поддержку духа сотрудничества, уважения и взаимопонимания между всеми
+                                    участниками.</p>
                                 </div>
                                 <style>
                                     #rec688336710 .t-card__title {
@@ -1080,8 +1097,8 @@
                         <div class="t509__colwrapper t-col t-col_12 ">
                             <div class="t-item t-animate" data-animate-style="fadeinleft" data-animate-chain="yes">
                                 <div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject">
-                                    <meta itemprop="image" content="https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg">
-                                    <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3334-3363-4134-a234-363933336633/cacb1a34013f082edc14.jpg" bgimgfield="li_img__1476897493817" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg');"></div>
+                                    <meta itemprop="image" content="https://i.tlauncher.org/images/ebfa7981edc2955681d2db6b9ba8c1ec856120cc.png">
+                                    <div class="t509__blockimg t-bgimg" data-original="https://i.tlauncher.org/images/ebfa7981edc2955681d2db6b9ba8c1ec856120cc.png" bgimgfield="li_img__1476897493817" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg');"></div>
                                 </div>
                                 <div class="t509__col t-col t-col_6 t509__leftcol">
                                     <div class="t509__textwrapper t-align_left" style="max-width:400px;">
@@ -1099,8 +1116,8 @@
                                 </div>
                                 <div class="t509__col t-col t-col_6 t509__rightcol t509__desktopimg">
                                     <div class="t509__imgwrapper" style="" itemscope itemtype="http://schema.org/ImageObject">
-                                        <meta itemprop="image" content="https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg">
-                                        <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3334-3363-4134-a234-363933336633/cacb1a34013f082edc14.jpg" bgimgfield="li_img__1476897493817" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg');"></div>
+                                        <meta itemprop="image" content="https://i.tlauncher.org/images/ebfa7981edc2955681d2db6b9ba8c1ec856120cc.png">
+                                        <div class="t509__blockimg t-bgimg" data-original="https://i.tlauncher.org/images/ebfa7981edc2955681d2db6b9ba8c1ec856120cc.png" bgimgfield="li_img__1476897493817" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3334-3363-4134-a234-363933336633/-/resizeb/20x/cacb1a34013f082edc14.jpg');"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1112,8 +1129,8 @@
                                 </div>
                                 <div class="t509__col t-col t-col_6 t509__leftcol t509__desktopimg">
                                     <div class="t509__imgwrapper" style="" itemscope itemtype="http://schema.org/ImageObject">
-                                        <meta itemprop="image" content="https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg">
-                                        <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3262-3236-4665-b262-386566363862/23e93c7a2ae7f2e845cd.jpg" bgimgfield="li_img__1476897695209" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg');"></div>
+                                        <meta itemprop="image" content="https://plasmovoice.com/landing/player-icons.png">
+                                        <div class="t509__blockimg t-bgimg" data-original="https://plasmovoice.com/landing/player-icons.png" bgimgfield="li_img__1476897695209" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3262-3236-4665-b262-386566363862/-/resizeb/20x/23e93c7a2ae7f2e845cd.jpg');"></div>
                                     </div>
                                 </div>
                                 <div class="t509__col t-col t-col_6 t509__rightcol">
@@ -1123,8 +1140,10 @@
                                                 <div class="t-card__title t-heading t-heading_xs t-margin_auto" id="cardtitle2_688336712" field="li_title__1476897695209">
                                                     <p style="text-align: left;">Голосовой чат</p>
                                                 </div>
-                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1476897695209"><span>Голосовой чат позволяет вам глубже погрузиться в мир игры и установить близкий контакт с игроками, созданными командой
-                                                Plasmo. Вы взаимодействуете с ними так, словно общаетесь в реальной жизни.</span>
+                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1476897695209"><span>На сервере Silestra реализован голосовой чат, который позволяет игрокам взаимодействовать в реальном времени. Общайтесь
+                                                с друзьями так, как будто вы рядом, упрощая коммуникацию для быстрого обсуждения стратегий и планов без задержек.
+                                                Найдите единомышленников и укрепите дружеские связи. Присоединяйтесь к серверу Silestra и наслаждайтесь игрой вместе с
+                                                другими игроками через голосовой чат!</span>
 </div>
                                             </div>
                                         </div>
@@ -1134,8 +1153,8 @@
                             <div class="t509__separator t-clear" style="margin-bottom:60px;"></div>
                             <div class="t-item t-animate" data-animate-style="fadeinleft" data-animate-chain="yes">
                                 <div class="t509__col t-col t-col_6 t509__mobileimg" itemscope itemtype="http://schema.org/ImageObject">
-                                    <meta itemprop="image" content="https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg">
-                                    <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3638-6464-4236-b232-313535633832/emotecraft-mod-minec.jpeg" bgimgfield="li_img__1486331374633" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg');"></div>
+                                    <meta itemprop="image" content="https://i.tlauncher.org/images/emotecraft-mod-screenshots-2.jpg">
+                                    <div class="t509__blockimg t-bgimg" data-original="https://i.tlauncher.org/images/emotecraft-mod-screenshots-2.jpg" bgimgfield="li_img__1486331374633" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg');"></div>
                                 </div>
                                 <div class="t509__col t-col t-col_6 t509__leftcol">
                                     <div class="t509__textwrapper t-align_left" style="max-width:400px;">
@@ -1143,8 +1162,8 @@
                                             <div class="t509__box">
                                                 <div class="t-card__title t-heading t-heading_xs t-margin_auto" id="cardtitle3_688336712" field="li_title__1486331374633">Эмоции
 </div>
-                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1486331374633"><span>Emote Craft помогает игрокам на сервере ярко выразить свои эмоции, придавая игре более атмосферный вид. Для этого
-                                                необходимо загрузить мод и связанные с ним компоненты.</span>
+                                                <div class="t-card__descr t-descr t-descr_sm t-margin_auto" field="li_descr__1486331374633"><span>Emote Craft на сервере Silestra позволяет игрокам выразить свои эмоции более ярко, добавляя атмосферности в игру. Для
+                                                начала работы с этой функцией просто установите мод и необходимые компоненты.</span>
                                                 </div>
 </div>
                                             </div>
@@ -1153,8 +1172,8 @@
                                 </div>
                                 <div class="t509__col t-col t-col_6 t509__rightcol t509__desktopimg">
                                     <div class="t509__imgwrapper" style="" itemscope itemtype="http://schema.org/ImageObject">
-                                        <meta itemprop="image" content="https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg">
-                                        <div class="t509__blockimg t-bgimg" data-original="https://static.tildacdn.com/tild3638-6464-4236-b232-313535633832/emotecraft-mod-minec.jpeg" bgimgfield="li_img__1486331374633" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg');"></div>
+                                        <meta itemprop="image" content="https://i.tlauncher.org/images/emotecraft-mod-screenshots-2.jpg">
+                                        <div class="t509__blockimg t-bgimg" data-original="https://i.tlauncher.org/images/emotecraft-mod-screenshots-2.jpg" bgimgfield="li_img__1486331374633" data-image-width="560" data-image-height="340px" style="background-image:url('https://thb.tildacdn.com/tild3638-6464-4236-b232-313535633832/-/resizeb/20x/emotecraft-mod-minec.jpeg');"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1202,10 +1221,12 @@
                         <img class="t147__img t147__widthauto t-img t-animate loaded t-animate_started" src="https://optim.tildacdn.com/tild6436-6339-4463-a263-313933373739/-/resize/480x/-/format/webp/VhvrY2A.png" data-original="https://static.tildacdn.com/tild6436-6339-4463-a263-313933373739/VhvrY2A.png" alt="" data-animate-style="fadeindown" imgfield="img" style="transition-delay: 0s;">
                         <div class="t-container_8">
                             <div class="t147__title t-text t-animate t-animate_started" data-animate-style="fadeindown" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" field="title" itemprop="name" style="transition-delay: 0.5s;">
-                                <strong style="font-size: 30px; font-family: Rubik;">На нашем сервере мы решительно против гриферства, токсичности, читерства и воровства.</strong>
+                                <strong style="font-size: 30px; font-family: Rubik;">Гриферство это плохо!</strong>
                                 <br>
                                 <br>
-                                <span style="font-family: Rubik; font-size: 22px;">На нашем сервере мы строго пресекаем гриферство, наказывая нарушителей и восстанавливая пострадавшие постройки. Мы оснастили систему защиты, которая мгновенно обнаруживает гриферов, позволяя модераторам быстро реагировать на нарушения. Пользователи, нарушающие правила чата, быстро лишаются доступа к нему на длительное время.</span>
+                                <span style="font-family: Rubik; font-size: 22px;">Мы строго боремся с гриферством, наказывая нарушителей и восстанавливая поврежденные постройки. У нас внедрена система
+                                защиты, которая мгновенно распознает гриферов и позволяет модераторам оперативно реагировать на нарушения. Пользователи,
+                                нарушающие правила общения в чате, быстро теряют доступ к нему на продолжительный срок.</span>
                             </div>
                         </div>
                     </div>

@@ -13,6 +13,7 @@ body.light-theme {
     color: #333;
     .t1106__line {
         color: #333;
+        .header{background-color: #0d0a1c;}
     }
 }
 
@@ -497,4 +498,50 @@ footer {
         width: 60%;
     }
 }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    /* Добавьте это */
+    padding: 0;
+}
 
+.header {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    padding: 20px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #71ff7d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #007bff;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    opacity: 1;
+}
